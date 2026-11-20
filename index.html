@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Typermonitor — GitHub Actions</title>
+<style>
+body{font:16px system-ui;background:#10151d;color:#e9edf4;max-width:850px;margin:40px auto;padding:0 18px}
+main{background:#192230;border:1px solid #344256;border-radius:14px;padding:22px}
+a{color:#8ec5ff}code{background:#0c121a;padding:3px 6px;border-radius:5px}
+li{margin:10px 0}.note{color:#aab7c8}
+</style><main>
+<h1>Typermonitor</h1><p>Monitoring profili ZawódTyper przez GitHub Actions.</p>
+<h2>Jak dodać profil</h2>
+<p>Otwórz <code>data/profiles.json</code> w repozytorium GitHub i dodaj obiekt:</p>
+<pre><code>{"url":"https://zawodtyper.pl/typer/6560/","enabled":true}</code></pre>
+<p>Ustaw <code>enabled</code> na <code>false</code>, aby wyłączyć profil. Po zapisaniu zmiany monitoring obejmie go w kolejnych uruchomieniach.</p>
+<h2>Historia</h2><p>Wykryte identyfikatory komentarzy i data ostatniego sprawdzenia są przechowywane w <code>data/monitor_state.json</code>.</p>
+<h2>Logi</h2><p>W repozytorium wejdź w <b>Actions → Typermonitor — sprawdzanie profili</b>, aby sprawdzić wynik kolejnego uruchomienia.</p>
+<p class="note">GitHub Actions nie jest serwerem działającym bez przerwy. Harmonogram cron uruchamia zadanie co 5 minut, ale GitHub może opóźniać start. Parser wymaga testu na żywym HTML profilu.</p>
+</main></html>
