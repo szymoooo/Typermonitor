@@ -6,7 +6,7 @@ GitHub Actions uruchamia `monitor.py` co 5 minut (`*/5 * * * *`), sprawdza profi
 1. Folder `.github/workflows/` musi być w repozytorium (przy wgrywaniu ZIP-a przez przeglądarkę folder z kropką bywa pomijany — dodawaj pliki przez `git push`, nie przez „Upload files").
 2. Settings → Actions → General: Actions dozwolone, *Workflow permissions* = **Read and write**.
 3. Dodaj sekrety (Settings → Secrets and variables → Actions) — patrz niżej.
-4. Actions → „Typermonitor — sprawdzanie profili” → **Run workflow**. W logu pierwszy przebieg pokaże `BASELINE` dla każdego profilu (stare typy nie są zgłaszane).
+4. Actions → „Typermonitor — sprawdzanie profili” → **Run workflow**. Pierwszy przebieg pokaże w logu `BASELINE ... N existing entries` (N większe od 0) dla każdego profilu (stare typy nie są zgłaszane).
 
 ## Powiadomienia
 **ntfy (zalecane, bez konta):** zainstaluj aplikację *ntfy* (Android/iOS), kliknij „+” i zasubskrybuj własny, trudny do odgadnięcia temat, np. `typermonitor-x7k2q9m4`. Ten sam tekst wpisz jako sekret `NTFY_TOPIC`. Każdy, kto zna nazwę tematu, może go czytać i pisać, więc traktuj ją jak hasło. Na iOS powiadomienia mogą docierać z opóźnieniem — w ustawieniach aplikacji włącz powiadomienia i sprawdź tryb „Nie przeszkadzać”.
@@ -36,5 +36,5 @@ Edytuj `data/profiles.json` na GitHubie:
 
 ## Ograniczenia
 - GitHub nie gwarantuje punktualności crona; opóźnienia rzędu kilku–kilkunastu minut są normalne.
-- Parser szuka `a[href*="#comment-"]` w HTML-u profilu. Jeśli lista typów ładuje się JavaScriptem, w logu zobaczysz `0 existing entries` — wtedy parser trzeba zmienić.
+- Lista typów nie jest w HTML profilu (ładuje ją JavaScript), więc monitor pyta to samo API, z którego korzysta strona (`NP_ajax.php`, `api_get_user_bets`). To nieoficjalny endpoint: jeśli właściciel serwisu go zmieni, w logu pojawi się `ERROR`. Zapytań jest niewiele (po jednym na profil co 5 minut), proszę nie skracać interwału.
 - Repozytorium publiczne ma darmowe minuty Actions; w prywatnym ~288 uruchomień dziennie może przekroczyć limit planu.

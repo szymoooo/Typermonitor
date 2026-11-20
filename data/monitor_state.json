@@ -1,25 +1,3 @@
 {
-  "last_check_date": "2026-11-20",
-  "profiles": {
-    "30188": {
-      "name": "Typer Jarosław Kijko",
-      "seen": [],
-      "url": "https://zawodtyper.pl/typer/30188/"
-    },
-    "3121": {
-      "name": "Typer Michał Olkiewicz",
-      "seen": [],
-      "url": "https://zawodtyper.pl/typer/3121/"
-    },
-    "3323": {
-      "name": "Typer Piotr Boss",
-      "seen": [],
-      "url": "https://zawodtyper.pl/typer/3323/"
-    },
-    "6560": {
-      "name": "Typer Adam Proszczuk",
-      "seen": [],
-      "url": "https://zawodtyper.pl/typer/6560/"
-    }
-  }
+  "profiles": {}
 }
