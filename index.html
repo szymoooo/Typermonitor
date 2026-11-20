@@ -1,18 +1,184 @@
 <!doctype html>
-<html lang="pl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Typermonitor — GitHub Actions</title>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Typermonitor</title>
 <style>
-body{font:16px system-ui;background:#10151d;color:#e9edf4;max-width:850px;margin:40px auto;padding:0 18px}
-main{background:#192230;border:1px solid #344256;border-radius:14px;padding:22px}
-a{color:#8ec5ff}code{background:#0c121a;padding:3px 6px;border-radius:5px}
-li{margin:10px 0}.note{color:#aab7c8}
-</style><main>
-<h1>Typermonitor</h1><p>Monitoring profili ZawódTyper przez GitHub Actions.</p>
-<h2>Jak dodać profil</h2>
-<p>Otwórz <code>data/profiles.json</code> w repozytorium GitHub i dodaj obiekt:</p>
-<pre><code>{"url":"https://zawodtyper.pl/typer/6560/","enabled":true}</code></pre>
-<p>Ustaw <code>enabled</code> na <code>false</code>, aby wyłączyć profil. Po zapisaniu zmiany monitoring obejmie go w kolejnych uruchomieniach.</p>
-<h2>Historia</h2><p>Wykryte identyfikatory komentarzy i data ostatniego sprawdzenia są przechowywane w <code>data/monitor_state.json</code>.</p>
-<h2>Logi</h2><p>W repozytorium wejdź w <b>Actions → Typermonitor — sprawdzanie profili</b>, aby sprawdzić wynik kolejnego uruchomienia.</p>
-<p class="note">GitHub Actions nie jest serwerem działającym bez przerwy. Harmonogram cron uruchamia zadanie co 5 minut, ale GitHub może opóźniać start. Parser wymaga testu na żywym HTML profilu.</p>
-</main></html>
+:root{--bg:#0f141b;--panel:#171e29;--line:#2a3547;--text:#e8edf4;--muted:#93a1b5;--accent:#6cb6ff;
+--win:#34c27a;--loss:#ef5d6c;--void:#e0b341;--pend:#8794a8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:18px}
+h1{font-size:24px;margin:0}
+.upd{color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.pill{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:7px 14px;
+cursor:pointer;font:inherit}
+.pill[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#08121e;font-weight:600}
+.pill small{opacity:.7;margin-left:4px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.card b{display:block;font-size:22px;margin-top:2px}
+.card span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.pos{color:var(--win)}.neg{color:var(--loss)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.filters button{background:none;border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:5px 11px;cursor:pointer;font:inherit;font-size:13px}
+.filters button[aria-pressed=true]{color:var(--text);border-color:var(--accent)}
+.list{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.row{display:grid;grid-template-columns:110px 1fr 70px 100px;gap:10px;padding:11px 14px;border-top:1px solid var(--line);align-items:center}
+.row:first-child{border-top:0}
+.row .when{color:var(--muted);font-size:13px}
+.row .ev{font-weight:600}
+.row .sub{color:var(--muted);font-size:13px;margin-top:2px}
+.row .odds{font-variant-numeric:tabular-nums;text-align:right}
+.badge{display:inline-block;border-radius:6px;padding:3px 9px;font-size:12px;font-weight:600;text-align:center;justify-self:end}
+.b1{background:#1b3a2b;color:var(--win)}.b-1{background:#40202a;color:var(--loss)}
+.b0{background:#3d3418;color:var(--void)}.bp{background:#273142;color:var(--pend)}.b-2{background:#2a2a2a;color:#aaa}
+.msg{padding:28px;text-align:center;color:var(--muted)}
+details{margin-top:28px;color:var(--muted)}
+summary{cursor:pointer}
+code{background:#0b1017;padding:2px 6px;border-radius:5px}
+pre{background:#0b1017;padding:12px;border-radius:8px;overflow:auto}
+.foot{margin-top:28px;font-size:12px;color:var(--muted)}
+@media(max-width:640px){
+ .row{grid-template-columns:1fr auto;grid-template-areas:"ev badge" "sub odds" "when when"}
+ .row .evbox{grid-area:ev}.row .badge{grid-area:badge}.row .odds{grid-area:odds}.row .when{grid-area:when}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Typermonitor</h1>
+    <span class="upd" id="upd">Ładowanie…</span>
+  </header>
+
+  <div class="pills" id="pills"></div>
+  <div class="stats" id="stats"></div>
+  <div class="filters" id="filters"></div>
+  <div class="list" id="list"><div class="msg">Ładowanie danych…</div></div>
+
+  <details>
+    <summary>Jak dodać lub wyłączyć profil</summary>
+    <p>Edytuj <code>data/profiles.json</code> w repozytorium i zapisz zmianę (Commit changes):</p>
+    <pre>{"url":"https://zawodtyper.pl/typer/6560/","enabled":true}</pre>
+    <p><code>"enabled": false</code> wyłącza profil. Nowy profil pojawi się tu po najbliższym przebiegu monitora.</p>
+  </details>
+
+  <p class="foot">Dane odświeża GitHub Actions (cron co ok. 5 minut, start bywa opóźniany).
+  „Zysk” liczony przy stałej stawce 1 jednostki na każdy rozliczony typ (wygrany: kurs − 1, przegrany: −1, zwrot: 0),
+  więc może się różnić od statystyk w serwisie. Źródło typów: <a href="https://zawodtyper.pl/">zawodtyper.pl</a>.</p>
+</div>
+
+<script>
+(function(){
+  var data=null, sel="all", flt="all";
+  var $=function(id){return document.getElementById(id)};
+  var FILTERS=[["all","Wszystkie"],["pending","Nierozliczone"],["won","Wygrane"],["lost","Przegrane"],["void","Zwroty"]];
+
+  function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
+  function state(t){
+    if(!t.settled) return ["pending","Nierozliczony","bp"];
+    if(t.result===1) return ["won","Wygrany","b1"];
+    if(t.result===-1) return ["lost","Przegrany","b-1"];
+    if(t.result===0) return ["void","Zwrot","b0"];
+    return ["other","Nieuwzgl.","b-2"];
+  }
+  function sumStats(list){
+    var s={total:0,pending:0,won:0,lost:0,void:0,profit:0};
+    list.forEach(function(p){var x=p.stats;["total","pending","won","lost","void","profit"].forEach(function(k){s[k]+=x[k]||0})});
+    var g=s.won+s.lost;
+    s.hit=g?Math.round(1000*s.won/g)/10:null;
+    s.yield=g?Math.round(1000*s.profit/g)/10:null;
+    s.profit=Math.round(s.profit*100)/100;
+    return s;
+  }
+  function profiles(){return (data.order||[]).map(function(id){var p=data.profiles[id];if(p)p.id=id;return p}).filter(Boolean)}
+  function fmtDate(iso){
+    try{return new Date(iso).toLocaleString("pl-PL",{dateStyle:"medium",timeStyle:"short"})}catch(e){return iso}
+  }
+
+  function renderPills(){
+    var box=$("pills");box.textContent="";
+    var all=profiles();
+    function add(id,label,count){
+      var b=el("button","pill",label);b.type="button";b.setAttribute("aria-pressed",String(sel===id));
+      b.appendChild(el("small",null,String(count)));
+      b.onclick=function(){sel=id;render()};box.appendChild(b);
+    }
+    add("all","Wszyscy",all.reduce(function(a,p){return a+p.stats.total},0));
+    all.forEach(function(p){add(p.id,(p.name||p.id).replace(/^Typer\s+/,""),p.stats.total)});
+  }
+  function card(label,value,cls){
+    var c=el("div","card");c.appendChild(el("span",null,label));
+    var b=el("b",cls||"",value);c.appendChild(b);return c;
+  }
+  function renderStats(){
+    var box=$("stats");box.textContent="";
+    var list=sel==="all"?profiles():profiles().filter(function(p){return p.id===sel});
+    var s=sumStats(list);
+    box.appendChild(card("Typy",String(s.total)));
+    box.appendChild(card("Nierozliczone",String(s.pending)));
+    box.appendChild(card("Wygrane",String(s.won),"pos"));
+    box.appendChild(card("Przegrane",String(s.lost),"neg"));
+    box.appendChild(card("Zwroty",String(s.void)));
+    box.appendChild(card("Skuteczność",s.hit==null?"—":s.hit+"%"));
+    box.appendChild(card("Zysk (1 j.)",(s.profit>0?"+":"")+s.profit.toFixed(2),s.profit>0?"pos":s.profit<0?"neg":""));
+    box.appendChild(card("Yield",s.yield==null?"—":(s.yield>0?"+":"")+s.yield+"%",s.yield>0?"pos":s.yield<0?"neg":""));
+  }
+  function renderFilters(){
+    var box=$("filters");box.textContent="";
+    FILTERS.forEach(function(f){
+      var b=el("button",null,f[1]);b.type="button";b.setAttribute("aria-pressed",String(flt===f[0]));
+      b.onclick=function(){flt=f[0];render()};box.appendChild(b);
+    });
+  }
+  function renderList(){
+    var box=$("list");box.textContent="";
+    var rows=[];
+    profiles().forEach(function(p){
+      if(sel!=="all"&&p.id!==sel)return;
+      p.tips.forEach(function(t){rows.push({p:p,t:t})});
+    });
+    rows=rows.filter(function(r){return flt==="all"||state(r.t)[0]===flt});
+    rows.sort(function(a,b){return Number(b.t.id)-Number(a.t.id)});
+    if(!rows.length){box.appendChild(el("div","msg","Brak typów dla wybranego filtru."));return}
+    rows.slice(0,150).forEach(function(r){
+      var t=r.t,st=state(t),row=el("div","row");
+      row.appendChild(el("div","when",t.when||""));
+      var ev=el("div","evbox");
+      ev.appendChild(el("div","ev",t.event||"—"));
+      var sub=[t.pick];
+      if(sel==="all")sub.unshift((r.p.name||"").replace(/^Typer\s+/,""));
+      if(t.discipline)sub.push(t.discipline);
+      if(t.bookmaker)sub.push(t.bookmaker);
+      ev.appendChild(el("div","sub",sub.filter(Boolean).join(" · ")));
+      row.appendChild(ev);
+      row.appendChild(el("div","odds",t.odds||"—"));
+      row.appendChild(el("span","badge "+st[2],st[1]));
+      box.appendChild(row);
+    });
+  }
+  function render(){renderPills();renderStats();renderFilters();renderList()}
+
+  fetch("data/tips.json?t="+Date.now(),{cache:"no-store"})
+    .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json()})
+    .then(function(j){
+      data=j;
+      if(!profiles().length){$("upd").textContent="";$("list").textContent="";
+        $("list").appendChild(el("div","msg","Brak danych. Uruchom workflow w zakładce Actions."));return}
+      $("upd").textContent="Ostatnia zmiana danych: "+fmtDate(j.updated);
+      render();
+    })
+    .catch(function(e){
+      $("upd").textContent="";
+      $("list").textContent="";
+      $("list").appendChild(el("div","msg","Nie udało się wczytać danych ("+e.message+"). Uruchom workflow w zakładce Actions, aby wygenerować data/tips.json."));
+    });
+})();
+</script>
+</body>
+</html>

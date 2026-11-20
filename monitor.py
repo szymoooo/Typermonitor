@@ -6,6 +6,8 @@ import httpx
 BASE = os.path.dirname(os.path.abspath(__file__))
 PROFILES_FILE = os.path.join(BASE, "data", "profiles.json")
 STATE_FILE = os.path.join(BASE, "data", "monitor_state.json")
+TIPS_FILE = os.path.join(BASE, "data", "tips.json")      # dane dla panelu na GitHub Pages
+DASHBOARD_TIPS_PER_PROFILE = 80
 
 API_URL = "https://zawodtyper.pl/wp-content/NP_ajax.php"  # to samo API, którego używa strona profilu
 
@@ -86,8 +88,61 @@ def fetch_tips(client, tid, profile_url):
             "discipline": (b.get("discipline") or "").strip(),
             "when": ((b.get("bet_day") or "")[:10] + " " + (b.get("hour") or "")).strip(),
             "url": profile_url,
+            "settled": str(b.get("settled")) == "1",
+            "result": to_int(b.get("result")),
         })
     return tips
+
+
+def to_int(v):
+    try:
+        return int(str(v))
+    except (TypeError, ValueError):
+        return None
+
+
+def to_float(v):
+    try:
+        return float(str(v).replace(",", "."))
+    except (TypeError, ValueError):
+        return None
+
+
+def summarize(tips):
+    """Statystyki rozliczeń. result: 1 wygrany, 0 zwrot, -1 przegrany, -2 nieuwzględniony (czarny kurs)."""
+    won = lost = void = excluded = 0
+    pending = 0
+    profit = 0.0
+    for t in tips:
+        if not t["settled"]:
+            pending += 1
+            continue
+        odds = to_float(t["odds"])
+        if t["result"] == 1:
+            won += 1
+            profit += (odds - 1) if odds else 0
+        elif t["result"] == -1:
+            lost += 1
+            profit -= 1
+        elif t["result"] == 0:
+            void += 1
+        elif t["result"] == -2:
+            excluded += 1
+    graded = won + lost
+    return {
+        "total": len(tips), "pending": pending, "won": won, "lost": lost, "void": void,
+        "excluded": excluded,
+        "hit_rate": round(100 * won / graded, 1) if graded else None,
+        "profit": round(profit, 2),
+        "yield": round(100 * profit / graded, 1) if graded else None,
+    }
+
+
+def dashboard_entry(name, url, tips):
+    latest = sorted(tips, key=lambda t: int(t["id"]) if t["id"].isdigit() else 0, reverse=True)
+    keep = ("id", "event", "pick", "odds", "bookmaker", "discipline", "when", "settled", "result")
+    return {"name": name, "url": url, "stats": summarize(tips),
+            "tips": [{k: t[k] for k in keep} for t in latest[:DASHBOARD_TIPS_PER_PROFILE]]}
 
 
 def notifications_configured():
@@ -150,6 +205,9 @@ def main():
     state = read_json(STATE_FILE, {"profiles": {}})
     state.setdefault("profiles", {})
     before = json.dumps(state, sort_keys=True)
+    dash = read_json(TIPS_FILE, {"profiles": {}})
+    dash.setdefault("profiles", {})
+    dash_before = json.dumps(dash.get("profiles"), sort_keys=True) + json.dumps(dash.get("order"))
     enabled = [p for p in profiles if p.get("enabled", True)]
     errors = 0
 
@@ -165,6 +223,9 @@ def main():
                 tips = fetch_tips(client, tid, url)
                 label = name or tid
                 current = {t["id"] for t in tips}
+
+                if tips or not (previous and previous.get("seen")):
+                    dash["profiles"][tid] = dashboard_entry(name, url, tips)
 
                 if previous is None:
                     # Pierwszy odczyt = baseline, bez alertów dla starych typów.
@@ -206,6 +267,18 @@ def main():
             except Exception as e:
                 errors += 1
                 print(f"ERROR {item.get('url')}: {type(e).__name__}: {e}")
+
+    order = []
+    for p in enabled:
+        try:
+            order.append(normalize(p["url"])[1])
+        except Exception:
+            pass
+    dash["order"] = order
+    dash["profiles"] = {k: v for k, v in dash["profiles"].items() if k in dash["order"]}
+    if json.dumps(dash["profiles"], sort_keys=True) + json.dumps(dash["order"]) != dash_before:
+        dash["updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        write_json(TIPS_FILE, dash)
 
     # Data (bez godziny), żeby plik zmieniał się najwyżej raz dziennie, a nie w każdym przebiegu.
     state["last_check_date"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")

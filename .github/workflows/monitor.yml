@@ -43,7 +43,7 @@ jobs:
         run: |
           git config user.name "typermonitor-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/monitor_state.json
+          git add data/monitor_state.json data/tips.json
           if ! git diff --cached --quiet; then
             git commit -m "Aktualizacja stanu monitora"
             git pull --rebase --autostash
