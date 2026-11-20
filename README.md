@@ -9,6 +9,8 @@ GitHub Actions uruchamia `monitor.py` co 5 minut (`*/5 * * * *`), sprawdza profi
 4. Actions → „Typermonitor — sprawdzanie profili” → **Run workflow**. W logu pierwszy przebieg pokaże `BASELINE` dla każdego profilu (stare typy nie są zgłaszane).
 
 ## Powiadomienia
+**ntfy (zalecane, bez konta):** zainstaluj aplikację *ntfy* (Android/iOS), kliknij „+” i zasubskrybuj własny, trudny do odgadnięcia temat, np. `typermonitor-x7k2q9m4`. Ten sam tekst wpisz jako sekret `NTFY_TOPIC`. Każdy, kto zna nazwę tematu, może go czytać i pisać, więc traktuj ją jak hasło. Na iOS powiadomienia mogą docierać z opóźnieniem — w ustawieniach aplikacji włącz powiadomienia i sprawdź tryb „Nie przeszkadzać”.
+
 **Telegram (zalecane, najprościej):** utwórz bota u `@BotFather`, napisz do niego cokolwiek, chat id odczytasz z `https://api.telegram.org/bot<TOKEN>/getUpdates`. Sekrety: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`.
 
 **WhatsApp (opcjonalnie, przez CallMeBot):** wyślij wiadomość aktywacyjną do bota CallMeBot zgodnie z instrukcją na callmebot.com, dostaniesz klucz API. Sekrety: `WHATSAPP_PHONE` (np. `48123456789`), `WHATSAPP_APIKEY`. To darmowa usługa osób trzecich, bywa zawodna.

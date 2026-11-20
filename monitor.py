@@ -12,6 +12,8 @@ TG_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 WA_PHONE = os.getenv("WHATSAPP_PHONE", "").strip()      # CallMeBot, np. 48123456789
 WA_APIKEY = os.getenv("WHATSAPP_APIKEY", "").strip()
+NTFY_TOPIC = os.getenv("NTFY_TOPIC", "").strip()        # ntfy.sh — push na telefon, bez konta
+NTFY_SERVER = os.getenv("NTFY_SERVER", "https://ntfy.sh").strip().rstrip("/")
 
 # Powyżej tylu nowych typów naraz wysyłamy jedno zbiorcze powiadomienie
 # (ochrona przed zalewem, np. po zmianie wyglądu strony).
@@ -83,7 +85,7 @@ def parse_profile(html, profile_url):
 
 
 def notifications_configured():
-    return bool((TG_TOKEN and TG_CHAT) or (WA_PHONE and WA_APIKEY))
+    return bool((TG_TOKEN and TG_CHAT) or (WA_PHONE and WA_APIKEY) or NTFY_TOPIC)
 
 
 def notify(text):
@@ -107,6 +109,19 @@ def notify(text):
             delivered = True
         except Exception as e:
             print("WhatsApp send failed:", type(e).__name__)
+    if NTFY_TOPIC:
+        try:
+            lines = text.split("\n")
+            headers = {"Title": "Typermonitor", "Priority": "high", "Tags": "bell"}
+            link = next((l for l in lines if l.startswith("http")), "")
+            if link:
+                headers["Click"] = link
+            r = httpx.post(f"{NTFY_SERVER}/{NTFY_TOPIC}", content=text.encode("utf-8"),
+                           headers=headers, timeout=20)
+            r.raise_for_status()
+            delivered = True
+        except Exception as e:
+            print("ntfy send failed:", type(e).__name__)
     return delivered
 
 
@@ -131,7 +146,7 @@ def main():
     errors = 0
 
     if not notifications_configured():
-        print("WARNING: brak skonfigurowanych powiadomień (Telegram/WhatsApp) — alerty nie będą wysyłane.")
+        print("WARNING: brak skonfigurowanych powiadomień (ntfy/Telegram/WhatsApp) — alerty nie będą wysyłane.")
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "

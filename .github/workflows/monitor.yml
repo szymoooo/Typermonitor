@@ -34,6 +34,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
 
       # always(): stan zapisujemy także wtedy, gdy któryś profil zwrócił błąd,
       # żeby wysłane już alerty nie powtarzały się przy kolejnym przebiegu.
