@@ -5,6 +5,7 @@ on:
   schedule:
     - cron: "*/20 5-14 * * 1-5"   # Pn–Pt 07:00–15:00, co 20 min
     - cron: "*/5 13-22 * * 1-5"   # Pn–Pt 15:00–23:55, co 5 min
+    - cron: "*/20 6-9 * * 0,6"    # So–Nd 08:00–11:00, co 20 min
     - cron: "*/5 9-22 * * 0,6"    # So–Nd 11:00–23:55, co 5 min
   workflow_dispatch:
     inputs:

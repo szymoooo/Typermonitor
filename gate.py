@@ -6,8 +6,9 @@ Harmonogramy w workflow są w UTC, więc obejmują zakres szerszy niż potrzeba
 Okna (Europa/Warszawa):
   Pn–Pt 07:00–14:59  co 20 min   (cron "slow")
   Pn–Pt 15:00–23:59  co 5 min    (cron "fast weekday")
+  So–Nd 08:00–10:59  co 20 min   (cron "slow weekend")
   So–Nd 11:00–23:59  co 5 min    (cron "fast weekend")
-  poza tym: bez sprawdzania (noc, weekendowy ranek)
+  poza tym: bez sprawdzania (noc)
 """
 import os
 from datetime import datetime
@@ -16,6 +17,7 @@ from zoneinfo import ZoneInfo
 SLOW = "*/20 5-14 * * 1-5"
 FAST_WEEKDAY = "*/5 13-22 * * 1-5"
 FAST_WEEKEND = "*/5 9-22 * * 0,6"
+SLOW_WEEKEND = "*/20 6-9 * * 0,6"
 
 
 def decide(event, schedule, now):
@@ -27,6 +29,8 @@ def decide(event, schedule, now):
         ok = dow < 5 and 7 * 60 <= t < 15 * 60
     elif schedule == FAST_WEEKDAY:
         ok = dow < 5 and t >= 15 * 60
+    elif schedule == SLOW_WEEKEND:
+        ok = dow >= 5 and 8 * 60 <= t < 11 * 60
     elif schedule == FAST_WEEKEND:
         ok = dow >= 5 and t >= 11 * 60
     else:

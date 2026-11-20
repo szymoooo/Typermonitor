@@ -7,8 +7,9 @@ GitHub Actions uruchamia `monitor.py` według harmonogramu poniżej, sprawdza pr
 |---|---|---|
 | Pn–Pt | 07:00–14:59 | co 20 min |
 | Pn–Pt | 15:00–23:55 | co 5 min |
+| So–Nd | 08:00–10:59 | co 20 min |
 | So–Nd | 11:00–23:55 | co 5 min |
-| codziennie | noc, w weekend także rano do 11:00 | bez sprawdzania |
+| codziennie | noc 00:00–07:00 (w weekend do 08:00) | bez sprawdzania |
 
 Cron w GitHubie działa w UTC, a Polska zmienia czas dwa razy w roku, więc w `monitor.yml` zakresy godzin UTC są szersze niż potrzeba, a dokładne okna pilnuje `gate.py` (strefa Europe/Warsaw). Żeby zmienić godziny, edytuj `gate.py` (warunki w `decide`) i, jeśli rozszerzasz zakres, odpowiadające im zakresy cron w `.github/workflows/monitor.yml`. Ręczne uruchomienie (Run workflow) działa o każdej porze.
 
