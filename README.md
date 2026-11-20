@@ -1,6 +1,16 @@
 # Typermonitor — GitHub Actions
 
-GitHub Actions uruchamia `monitor.py` co 5 minut (`*/5 * * * *`), sprawdza profile z `data/profiles.json` na zawodtyper.pl i wysyła powiadomienie, gdy pojawi się nowy typ. Nie wymaga serwera.
+GitHub Actions uruchamia `monitor.py` według harmonogramu poniżej, sprawdza profile z `data/profiles.json` na zawodtyper.pl i wysyła powiadomienie, gdy pojawi się nowy typ. Nie wymaga serwera.
+
+## Harmonogram (czas polski)
+| Dni | Godziny | Częstotliwość |
+|---|---|---|
+| Pn–Pt | 07:00–14:59 | co 20 min |
+| Pn–Pt | 15:00–23:55 | co 5 min |
+| So–Nd | 11:00–23:55 | co 5 min |
+| codziennie | noc, w weekend także rano do 11:00 | bez sprawdzania |
+
+Cron w GitHubie działa w UTC, a Polska zmienia czas dwa razy w roku, więc w `monitor.yml` zakresy godzin UTC są szersze niż potrzeba, a dokładne okna pilnuje `gate.py` (strefa Europe/Warsaw). Żeby zmienić godziny, edytuj `gate.py` (warunki w `decide`) i, jeśli rozszerzasz zakres, odpowiadające im zakresy cron w `.github/workflows/monitor.yml`. Ręczne uruchomienie (Run workflow) działa o każdej porze.
 
 ## Uruchomienie
 1. Folder `.github/workflows/` musi być w repozytorium (przy wgrywaniu ZIP-a przez przeglądarkę folder z kropką bywa pomijany — dodawaj pliki przez `git push`, nie przez „Upload files").

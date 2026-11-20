@@ -1,8 +1,11 @@
 name: Typermonitor — sprawdzanie profili
 
 on:
+  # Godziny w UTC (szerzej niż potrzeba); dokładne okna czasu polskiego pilnuje gate.py.
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/20 5-14 * * 1-5"   # Pn–Pt 07:00–15:00, co 20 min
+    - cron: "*/5 13-22 * * 1-5"   # Pn–Pt 15:00–23:55, co 5 min
+    - cron: "*/5 9-22 * * 0,6"    # So–Nd 11:00–23:55, co 5 min
   workflow_dispatch:
     inputs:
       test:
@@ -25,14 +28,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Okno czasowe (czas polski)
+        id: gate
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: python3 gate.py
+
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
         with:
           python-version: "3.12"
           cache: pip
 
-      - run: pip install -r requirements.txt
+      - if: steps.gate.outputs.run == 'true'
+        run: pip install -r requirements.txt
 
       - name: Sprawdź profile
+        if: steps.gate.outputs.run == 'true'
         run: python monitor.py ${{ inputs.test && '--test' || '' }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -44,7 +57,7 @@ jobs:
       # always(): stan zapisujemy także wtedy, gdy któryś profil zwrócił błąd,
       # żeby wysłane już alerty nie powtarzały się przy kolejnym przebiegu.
       - name: Zapisz stan
-        if: always()
+        if: always() && steps.gate.outputs.run == 'true'
         run: |
           git config user.name "typermonitor-bot"
           git config user.email "actions@users.noreply.github.com"
