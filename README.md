@@ -1,40 +1,38 @@
 # Typermonitor — GitHub Actions
 
-Ta wersja nie wymaga Railway ani stale działającego backendu. GitHub Actions uruchamia `monitor.py` według harmonogramu `*/5 * * * *` (co 5 minut). GitHub może opóźniać zadania cron; nie jest to gwarancja startu dokładnie co 300 sekund.
+GitHub Actions uruchamia `monitor.py` co 5 minut (`*/5 * * * *`), sprawdza profile z `data/profiles.json` na zawodtyper.pl i wysyła powiadomienie, gdy pojawi się nowy typ. Nie wymaga serwera.
 
-## Instalacja
-1. Rozpakuj ZIP i wgraj całą zawartość do istniejącego repozytorium `szymoooo/Typermonitor`, nadpisując poprzednie pliki.
-2. W GitHub otwórz Settings → Actions → General. Upewnij się, że Actions są dozwolone, a workflow ma uprawnienia zapisu do repozytorium (workflow deklaruje `contents: write`).
-3. Otwórz Actions → `Typermonitor — sprawdzanie profili` → Run workflow, aby uruchomić pierwszy test ręcznie.
-4. W logach sprawdź, czy profile są pobierane i czy parser widzi wpisy.
+## Uruchomienie
+1. Folder `.github/workflows/` musi być w repozytorium (przy wgrywaniu ZIP-a przez przeglądarkę folder z kropką bywa pomijany — dodawaj pliki przez `git push`, nie przez „Upload files").
+2. Settings → Actions → General: Actions dozwolone, *Workflow permissions* = **Read and write**.
+3. Dodaj sekrety (Settings → Secrets and variables → Actions) — patrz niżej.
+4. Actions → „Typermonitor — sprawdzanie profili” → **Run workflow**. W logu pierwszy przebieg pokaże `BASELINE` dla każdego profilu (stare typy nie są zgłaszane).
 
-## Dodawanie / wyłączanie profili
-W tej architekturze nie ma serwera API, więc panel statyczny nie może bezpiecznie zapisywać zmian do plików repozytorium. Profile dodaje się w `data/profiles.json` przez GitHub (Edit → Commit changes).
-Format:
+## Powiadomienia
+**Telegram (zalecane, najprościej):** utwórz bota u `@BotFather`, napisz do niego cokolwiek, chat id odczytasz z `https://api.telegram.org/bot<TOKEN>/getUpdates`. Sekrety: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`.
+
+**WhatsApp (opcjonalnie, przez CallMeBot):** wyślij wiadomość aktywacyjną do bota CallMeBot zgodnie z instrukcją na callmebot.com, dostaniesz klucz API. Sekrety: `WHATSAPP_PHONE` (np. `48123456789`), `WHATSAPP_APIKEY`. To darmowa usługa osób trzecich, bywa zawodna.
+
+Można skonfigurować oba kanały naraz. Alert uznawany jest za wysłany, gdy dotrze na którykolwiek.
+
+## Profile
+Edytuj `data/profiles.json` na GitHubie:
 ```json
 [
-  {"url":"https://zawodtyper.pl/typer/6560/","enabled":true},
-  {"url":"https://zawodtyper.pl/typer/12345/","enabled":true}
+  {"url":"https://zawodtyper.pl/typer/6560/","enabled":true}
 ]
 ```
-Można dodać dowolną liczbę profili. Wyłączenie: `"enabled": false`.
+`"enabled": false` wyłącza profil.
 
-## Telegram
-GitHub repo → Settings → Secrets and variables → Actions → New repository secret:
-- `TELEGRAM_BOT_TOKEN`
-- `TELEGRAM_CHAT_ID`
+## Stan
+`data/monitor_state.json` (commitowany automatycznie) przechowuje identyfikatory widzianych typów. Plik zmienia się tylko przy nowym typie lub raz dziennie (data sprawdzenia).
 
-Bez tych sekretów monitoring zapisuje nowe wpisy w stanie, ale nie wysyła alertów.
+## Zabezpieczenia
+- Typ jest oznaczany jako widziany dopiero po udanej wysyłce, więc nieudany alert zostanie ponowiony.
+- Strona zwracająca 0 wpisów dla profilu z historią jest traktowana jako błąd (zmiana HTML/blokada), a stan nie jest nadpisywany.
+- Więcej niż 8 nowych typów naraz → jedna wiadomość zbiorcza.
 
-## Jak działa historia
-`data/monitor_state.json` jest aktualizowany i commitowany przez GitHub Actions. Pierwsze uruchomienie dla nowego profilu zapisuje stan początkowy bez alertów dla archiwalnych typów. Następne uruchomienia alarmują tylko dla nowych identyfikatorów `comment-ID`.
-
-## Ważne ograniczenia
-- Cron `*/5` oznacza żądany harmonogram co 5 minut, ale GitHub nie gwarantuje punktualnego uruchomienia. GitHub może też ograniczać harmonogramy w okresach dużego obciążenia.
-- W tej wersji panel GitHub Pages jest stroną informacyjną. Dodawanie profili odbywa się przez edycję `data/profiles.json`, nie przez formularz na stronie. To ograniczenie wynika z braku stale działającego API.
-- Parser szuka linków `a[href*="#comment-"]` w pobranym HTML profilu. Przekazany fragment HTML jest zgodny z tym selektorem, ale trzeba potwierdzić, że cała lista typów jest obecna w odpowiedzi HTTP profilu, a nie doładowywana przez JavaScript. Test jest w logach Actions.
-- Pierwsze wykrycie profilu ustanawia baseline: stare typy nie są zgłaszane.
-- Repozytorium powinno być publiczne albo prywatne z włączonymi minutami GitHub Actions. Limity zależą od planu i widoczności repozytorium.
-
-## Zmiana interwału
-W `.github/workflows/monitor.yml` zmień cron. GitHub Actions nie obsługuje harmonogramu częściej niż raz na 5 minut.
+## Ograniczenia
+- GitHub nie gwarantuje punktualności crona; opóźnienia rzędu kilku–kilkunastu minut są normalne.
+- Parser szuka `a[href*="#comment-"]` w HTML-u profilu. Jeśli lista typów ładuje się JavaScriptem, w logu zobaczysz `0 existing entries` — wtedy parser trzeba zmienić.
+- Repozytorium publiczne ma darmowe minuty Actions; w prywatnym ~288 uruchomień dziennie może przekroczyć limit planu.
