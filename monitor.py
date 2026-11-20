@@ -200,7 +200,18 @@ def format_tip(profile_name, t):
     return "\n".join(parts)
 
 
+def send_test():
+    if not notifications_configured():
+        sys.exit("Brak skonfigurowanych kanałów powiadomień (sekrety NTFY_TOPIC / TELEGRAM_* / WHATSAPP_*).")
+    ok = notify("✅ Typermonitor: test powiadomienia. Jeśli to widzisz, alerty o nowych typach będą docierać.")
+    print("Test wysłany." if ok else "Test NIE został dostarczony na żaden kanał.")
+    if not ok:
+        sys.exit(1)
+
+
 def main():
+    if "--test" in sys.argv:
+        return send_test()
     profiles = read_json(PROFILES_FILE, [])
     state = read_json(STATE_FILE, {"profiles": {}})
     state.setdefault("profiles", {})
