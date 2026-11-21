@@ -4842,14 +4842,25 @@
         "excluded": 0,
         "hit_rate": 67.6,
         "lost": 12,
-        "pending": 0,
+        "pending": 1,
         "profit": 14.96,
-        "total": 37,
+        "total": 38,
         "void": 0,
         "won": 25,
         "yield": 40.4
       },
       "tips": [
+        {
+          "bookmaker": "STS",
+          "discipline": "Koszykówka",
+          "event": "King Wilki Morskie Szczecin - Anwil Włocławek",
+          "id": "511378",
+          "odds": "1.60",
+          "pick": "Szczecin -5,5",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-21 17:30"
+        },
         {
           "bookmaker": "Betfan",
           "discipline": "Koszykówka",
@@ -8850,5 +8861,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-21T14:10:38Z"
+  "updated": "2026-11-21T15:50:42Z"
 }
