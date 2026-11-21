@@ -1256,14 +1256,25 @@
         "excluded": 0,
         "hit_rate": 61.3,
         "lost": 257,
-        "pending": 0,
+        "pending": 1,
         "profit": 16.68,
-        "total": 675,
+        "total": 676,
         "void": 11,
         "won": 407,
         "yield": 2.5
       },
       "tips": [
+        {
+          "bookmaker": "STS",
+          "discipline": "Hokej",
+          "event": "Vancouver Canucks vs Minnesota Wild",
+          "id": "511453",
+          "odds": "1.60",
+          "pick": "Kirił Kaprizov ilość asyst +0,5",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-22 04:00"
+        },
         {
           "bookmaker": "STS",
           "discipline": "Koszykówka",
@@ -2132,17 +2143,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-09-15 18:00"
-        },
-        {
-          "bookmaker": "Superbet",
-          "discipline": "Piłka nożna",
-          "event": "Alaves vs Osasuna",
-          "id": "494833",
-          "odds": "1.55",
-          "pick": "Oba zespoły powyżej 10,5 faulu + Bba zespoły powyżej 0,5 kartki",
-          "result": 1,
-          "settled": true,
-          "when": "2026-09-06 18:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3121/"
@@ -10657,5 +10657,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-21T20:50:34Z"
+  "updated": "2026-11-21T21:20:43Z"
 }
