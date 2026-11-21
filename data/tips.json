@@ -7958,12 +7958,12 @@
         "excluded": 0,
         "hit_rate": 63.0,
         "lost": 177,
-        "pending": 1,
-        "profit": 23.94,
+        "pending": 0,
+        "profit": 24.93,
         "total": 483,
         "void": 4,
-        "won": 301,
-        "yield": 5.0
+        "won": 302,
+        "yield": 5.2
       },
       "tips": [
         {
@@ -7973,8 +7973,8 @@
           "id": "511226",
           "odds": "1.99",
           "pick": "Zwycięzca (włącznie z dogrywką): Instituto ACC",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-21 01:30"
         },
         {
@@ -8850,5 +8850,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-21T11:50:39Z"
+  "updated": "2026-11-21T12:20:42Z"
 }
