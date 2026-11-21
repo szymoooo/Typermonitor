@@ -1256,14 +1256,25 @@
         "excluded": 0,
         "hit_rate": 61.3,
         "lost": 257,
-        "pending": 1,
+        "pending": 2,
         "profit": 16.68,
-        "total": 676,
+        "total": 677,
         "void": 11,
         "won": 407,
         "yield": 2.5
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Hokej",
+          "event": "Florida Panthers vs Buffalo Sabres",
+          "id": "511462",
+          "odds": "1.69",
+          "pick": "Garnet Hathaway ilość hits +3,5",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-22 00:00"
+        },
         {
           "bookmaker": "STS",
           "discipline": "Hokej",
@@ -2132,17 +2143,6 @@
           "result": -1,
           "settled": true,
           "when": "2026-09-18 19:00"
-        },
-        {
-          "bookmaker": "LVBET",
-          "discipline": "Hokej",
-          "event": "Tychy vs Nowy Targ",
-          "id": "497077",
-          "odds": "1.85",
-          "pick": "Tychy ilość goli +5,5",
-          "result": 1,
-          "settled": true,
-          "when": "2026-09-15 18:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3121/"
@@ -10657,5 +10657,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-21T21:20:43Z"
+  "updated": "2026-11-21T21:50:06Z"
 }
