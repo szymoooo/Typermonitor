@@ -2151,14 +2151,25 @@
         "excluded": 0,
         "hit_rate": 60.1,
         "lost": 751,
-        "pending": 1,
+        "pending": 2,
         "profit": -36.19,
-        "total": 1892,
+        "total": 1893,
         "void": 9,
         "won": 1131,
         "yield": -1.9
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Feyenoord - Excelsior",
+          "id": "511317",
+          "odds": "1.55",
+          "pick": "over 1,5 goli + over 8,5 rr",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-21 18:45"
+        },
         {
           "bookmaker": "forBET",
           "discipline": "Piłka nożna",
@@ -3027,17 +3038,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-10-13 00:30"
-        },
-        {
-          "bookmaker": "forBET",
-          "discipline": "Piłka nożna",
-          "event": "Sarpsborg 2 - Raelingen",
-          "id": "501983",
-          "odds": "1.66",
-          "pick": "Bet Architekt over 3,5 goli / podwójna szansa 1/2",
-          "result": -1,
-          "settled": true,
-          "when": "2026-10-12 19:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3323/"
@@ -8850,5 +8850,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-21T11:01:07Z"
+  "updated": "2026-11-21T11:50:39Z"
 }
