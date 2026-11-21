@@ -357,14 +357,25 @@
         "excluded": 0,
         "hit_rate": 63.8,
         "lost": 171,
-        "pending": 0,
+        "pending": 1,
         "profit": 21.89,
-        "total": 475,
+        "total": 476,
         "void": 2,
         "won": 302,
         "yield": 4.6
       },
       "tips": [
+        {
+          "bookmaker": "Fortuna",
+          "discipline": "Piłka nożna",
+          "event": "Sevilla - Betis",
+          "id": "511337",
+          "odds": "1.55",
+          "pick": "Sevilla over 14,5 fauli",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-21 18:30"
+        },
         {
           "bookmaker": "Fortuna",
           "discipline": "Piłka nożna",
@@ -1233,17 +1244,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-07-24 18:00"
-        },
-        {
-          "bookmaker": "Fortuna",
-          "discipline": "Tenis",
-          "event": "Grant - Bouzkova",
-          "id": "481593",
-          "odds": "1.74",
-          "pick": "Bouzkova under 3,5 podwójnego błędu serwisowego",
-          "result": -1,
-          "settled": true,
-          "when": "2026-07-02 12:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/30188/"
@@ -8850,5 +8850,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-21T12:20:42Z"
+  "updated": "2026-11-21T12:50:51Z"
 }
