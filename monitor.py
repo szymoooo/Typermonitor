@@ -173,6 +173,9 @@ def notify(text):
                 delivered = True
             else:
                 print("WhatsApp: odpowiedź wygląda na błąd — wiadomość raczej NIE została wysłana.")
+                # Diagnostyka bez ujawniania wartości: długość i skład znaków sekretów.
+                print(f"WhatsApp: klucz ma {len(WA_APIKEY)} znaków, same cyfry: {WA_APIKEY.isdigit()}; "
+                      f"numer ma {len(WA_PHONE)} znaków, same cyfry (po usunięciu +): {WA_PHONE.lstrip('+').isdigit()}")
         except Exception as e:
             print("WhatsApp send failed:", type(e).__name__)
     elif WA_PHONE or WA_APIKEY:
