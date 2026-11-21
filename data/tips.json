@@ -907,14 +907,14 @@
       "name": "Typer Michał Olkiewicz",
       "stats": {
         "excluded": 0,
-        "hit_rate": 61.4,
-        "lost": 256,
-        "pending": 1,
-        "profit": 17.68,
+        "hit_rate": 61.3,
+        "lost": 257,
+        "pending": 0,
+        "profit": 16.68,
         "total": 675,
         "void": 11,
         "won": 407,
-        "yield": 2.7
+        "yield": 2.5
       },
       "tips": [
         {
@@ -924,8 +924,8 @@
           "id": "511130",
           "odds": "1.55",
           "pick": "Selton Miguel ilość trafionych trójek min. 2",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-20 18:00"
         },
         {
@@ -1805,9 +1805,9 @@
       "stats": {
         "excluded": 0,
         "hit_rate": 60.1,
-        "lost": 750,
-        "pending": 2,
-        "profit": -35.19,
+        "lost": 751,
+        "pending": 1,
+        "profit": -36.19,
         "total": 1892,
         "void": 9,
         "won": 1131,
@@ -1832,8 +1832,8 @@
           "id": "511076",
           "odds": "1.50",
           "pick": "over 0,5 gola w meczu + over 7,5 rr",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-20 20:45"
         },
         {
@@ -2703,14 +2703,25 @@
         "excluded": 0,
         "hit_rate": 63.0,
         "lost": 177,
-        "pending": 0,
+        "pending": 1,
         "profit": 23.94,
-        "total": 482,
+        "total": 483,
         "void": 4,
         "won": 301,
         "yield": 5.0
       },
       "tips": [
+        {
+          "bookmaker": "AdmiralBet",
+          "discipline": "Koszykówka",
+          "event": "1. Liga Argentyna: AD Atenas Cordoba vs Instituto ACC",
+          "id": "511226",
+          "odds": "1.99",
+          "pick": "Zwycięzca (włącznie z dogrywką): Instituto ACC",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-21 01:30"
+        },
         {
           "bookmaker": "AdmiralBet",
           "discipline": "Koszykówka",
@@ -3579,21 +3590,10 @@
           "result": -1,
           "settled": true,
           "when": "2026-07-10 01:15"
-        },
-        {
-          "bookmaker": "Fortuna",
-          "discipline": "Koszykówka",
-          "event": "Portoryko, BSN: Capitanes de Arecibo vs Cangrejeros de Santurce",
-          "id": "480949",
-          "odds": "1.69",
-          "pick": "Zwycięzca (z dogrywką): Cangrejeros de Santurce",
-          "result": 1,
-          "settled": true,
-          "when": "2026-06-30 02:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-20T22:04:10Z"
+  "updated": "2026-11-21T06:09:34Z"
 }
