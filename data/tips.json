@@ -6516,14 +6516,25 @@
         "excluded": 0,
         "hit_rate": 63.6,
         "lost": 16,
-        "pending": 2,
+        "pending": 3,
         "profit": 0.33,
-        "total": 47,
+        "total": 48,
         "void": 1,
         "won": 28,
         "yield": 0.8
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Racing Santander - Real Sociedad",
+          "id": "511306",
+          "odds": "1.50",
+          "pick": "Powyżej 8.5 rzutów rożnych +  powyżej 1.5 gola",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-22 16:15"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -8839,5 +8850,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-21T10:50:36Z"
+  "updated": "2026-11-21T11:01:07Z"
 }
