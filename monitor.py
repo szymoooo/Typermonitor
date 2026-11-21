@@ -166,10 +166,18 @@ def notify(text):
             r = httpx.get("https://api.callmebot.com/whatsapp.php",
                           params={"phone": WA_PHONE, "text": text, "apikey": WA_APIKEY},
                           timeout=30)
-            r.raise_for_status()
-            delivered = True
+            body = re.sub(r"\s+", " ", r.text or "").replace(WA_APIKEY, "***").strip()
+            print(f"WhatsApp (CallMeBot): HTTP {r.status_code}: {body[:200]}")
+            # CallMeBot potrafi zwrócić 200 z komunikatem błędu w treści — sprawdzamy treść, nie tylko kod.
+            if r.status_code == 200 and "error" not in body.lower() and "invalid" not in body.lower():
+                delivered = True
+            else:
+                print("WhatsApp: odpowiedź wygląda na błąd — wiadomość raczej NIE została wysłana.")
         except Exception as e:
             print("WhatsApp send failed:", type(e).__name__)
+    elif WA_PHONE or WA_APIKEY:
+        print("WhatsApp POMINIĘTY: ustaw OBA sekrety (WHATSAPP_PHONE i WHATSAPP_APIKEY) — brakuje: "
+              + ("WHATSAPP_APIKEY" if WA_PHONE else "WHATSAPP_PHONE"))
     if NTFY_TOPIC:
         try:
             headers = {"Title": "Typermonitor", "Priority": "high", "Tags": "bell"}
@@ -203,6 +211,9 @@ def format_tip(profile_name, t):
 def send_test():
     if not notifications_configured():
         sys.exit("Brak skonfigurowanych kanałów powiadomień (sekrety NTFY_TOPIC / TELEGRAM_* / WHATSAPP_*).")
+    channels = [n for n, on in (("ntfy", bool(NTFY_TOPIC)), ("Telegram", bool(TG_TOKEN and TG_CHAT)),
+                                ("WhatsApp", bool(WA_PHONE and WA_APIKEY))) if on]
+    print("Skonfigurowane kanały:", ", ".join(channels) or "brak")
     ok = notify("✅ Typermonitor: test powiadomienia. Jeśli to widzisz, alerty o nowych typach będą docierać.")
     print("Test wysłany." if ok else "Test NIE został dostarczony na żaden kanał.")
     if not ok:
