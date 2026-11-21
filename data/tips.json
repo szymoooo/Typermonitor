@@ -357,14 +357,25 @@
         "excluded": 0,
         "hit_rate": 63.8,
         "lost": 171,
-        "pending": 1,
+        "pending": 2,
         "profit": 21.89,
-        "total": 476,
+        "total": 477,
         "void": 2,
         "won": 302,
         "yield": 4.6
       },
       "tips": [
+        {
+          "bookmaker": "Fortuna",
+          "discipline": "Piłka nożna",
+          "event": "Argentinors Juniors - CA Indepediente",
+          "id": "511357",
+          "odds": "1.50",
+          "pick": "CA Indepediente over 12,5 fauli",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-21 21:00"
+        },
         {
           "bookmaker": "Fortuna",
           "discipline": "Piłka nożna",
@@ -1233,17 +1244,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-07-25 17:30"
-        },
-        {
-          "bookmaker": "forBET",
-          "discipline": "Piłka nożna",
-          "event": "Radomiak Radom - Wieczysta Kraków",
-          "id": "486185",
-          "odds": "1.73",
-          "pick": "Over 24,5 fauli w spotkaniu",
-          "result": 1,
-          "settled": true,
-          "when": "2026-07-24 18:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/30188/"
@@ -8850,5 +8850,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-21T12:50:51Z"
+  "updated": "2026-11-21T14:10:38Z"
 }
