@@ -9796,14 +9796,14 @@
       "name": "Typer Adam Proszczuk",
       "stats": {
         "excluded": 0,
-        "hit_rate": 63.1,
-        "lost": 177,
-        "pending": 1,
-        "profit": 25.6,
+        "hit_rate": 63.0,
+        "lost": 178,
+        "pending": 0,
+        "profit": 24.6,
         "total": 485,
         "void": 4,
         "won": 303,
-        "yield": 5.3
+        "yield": 5.1
       },
       "tips": [
         {
@@ -9824,8 +9824,8 @@
           "id": "511642",
           "odds": "2.18",
           "pick": "Zwycięzca (włącznie z dogrywką): Legia Warszawa /Marża 0%/",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-22 19:30"
         },
         {
@@ -10690,5 +10690,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T20:10:44Z"
+  "updated": "2026-11-22T21:20:42Z"
 }
