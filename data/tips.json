@@ -2153,11 +2153,11 @@
         "excluded": 0,
         "hit_rate": 60.1,
         "lost": 751,
-        "pending": 3,
-        "profit": -36.19,
+        "pending": 2,
+        "profit": -35.64,
         "total": 1894,
         "void": 9,
-        "won": 1131,
+        "won": 1132,
         "yield": -1.9
       },
       "tips": [
@@ -2179,8 +2179,8 @@
           "id": "511317",
           "odds": "1.55",
           "pick": "over 1,5 goli + over 8,5 rr",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-21 18:45"
         },
         {
@@ -10668,5 +10668,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T11:50:32Z"
+  "updated": "2026-11-22T12:01:07Z"
 }
