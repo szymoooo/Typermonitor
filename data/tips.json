@@ -6636,14 +6636,14 @@
       "name": "Typer Czoker Basket",
       "stats": {
         "excluded": 0,
-        "hit_rate": 67.6,
-        "lost": 12,
-        "pending": 1,
-        "profit": 14.96,
+        "hit_rate": 65.8,
+        "lost": 13,
+        "pending": 0,
+        "profit": 13.96,
         "total": 38,
         "void": 0,
         "won": 25,
-        "yield": 40.4
+        "yield": 36.7
       },
       "tips": [
         {
@@ -6653,8 +6653,8 @@
           "id": "511378",
           "odds": "1.60",
           "pick": "Szczecin -5,5",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-21 17:30"
         },
         {
@@ -8321,14 +8321,14 @@
       "name": "Typer Jan Kowalski",
       "stats": {
         "excluded": 0,
-        "hit_rate": 62.2,
-        "lost": 17,
-        "pending": 3,
-        "profit": -0.67,
+        "hit_rate": 60.9,
+        "lost": 18,
+        "pending": 2,
+        "profit": -1.67,
         "total": 49,
         "void": 1,
         "won": 28,
-        "yield": -1.5
+        "yield": -3.6
       },
       "tips": [
         {
@@ -8371,8 +8371,8 @@
           "id": "510889",
           "odds": "1.60",
           "pick": "Evanilson - powyżej 1.5 fauli na zawodniku",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-21 16:00"
         },
         {
@@ -10668,5 +10668,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T11:40:35Z"
+  "updated": "2026-11-22T11:50:32Z"
 }
