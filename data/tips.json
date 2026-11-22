@@ -2153,14 +2153,25 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 751,
-        "pending": 0,
+        "pending": 1,
         "profit": -34.12,
-        "total": 1894,
+        "total": 1895,
         "void": 9,
         "won": 1134,
         "yield": -1.8
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Racing Santander - Real Sociedad",
+          "id": "511633",
+          "odds": "1.55",
+          "pick": "over 9,5 rr",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-22 16:15"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -3029,17 +3040,6 @@
           "result": -1,
           "settled": true,
           "when": "2026-10-14 00:30"
-        },
-        {
-          "bookmaker": "Superbet",
-          "discipline": "Piłka nożna",
-          "event": "Cong An Ha Noi - Kashima",
-          "id": "502176",
-          "odds": "1.50",
-          "pick": "Kashima over 1,5 goli + zwycięstwo Kashima",
-          "result": -1,
-          "settled": true,
-          "when": "2026-10-13 14:15"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3323/"
@@ -10668,5 +10668,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T13:01:05Z"
+  "updated": "2026-11-22T14:01:07Z"
 }
