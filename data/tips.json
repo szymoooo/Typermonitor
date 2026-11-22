@@ -8031,14 +8031,25 @@
         "excluded": 0,
         "hit_rate": 88.0,
         "lost": 3,
-        "pending": 0,
+        "pending": 1,
         "profit": 9.81,
-        "total": 25,
+        "total": 26,
         "void": 0,
         "won": 22,
         "yield": 39.2
       },
       "tips": [
+        {
+          "bookmaker": "Betfan",
+          "discipline": "Koszykówka",
+          "event": "Nyk - Pacers",
+          "id": "511734",
+          "odds": "1.80",
+          "pick": "Karl Anthony Towns over 1..5 rzutów celnych za 3",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-23 02:00"
+        },
         {
           "bookmaker": "Betfan",
           "discipline": "Tenis",
@@ -10690,5 +10701,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T21:20:42Z"
+  "updated": "2026-11-22T21:40:37Z"
 }
