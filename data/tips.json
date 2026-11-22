@@ -8323,14 +8323,25 @@
         "excluded": 0,
         "hit_rate": 62.5,
         "lost": 18,
-        "pending": 1,
+        "pending": 2,
         "profit": -0.57,
-        "total": 50,
+        "total": 51,
         "void": 1,
         "won": 30,
         "yield": -1.2
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Monza - Fiorentina",
+          "id": "511712",
+          "odds": "1.56",
+          "pick": "Powyżej 2.5 gola",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-23 20:45"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -10679,5 +10690,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T19:01:04Z"
+  "updated": "2026-11-22T19:30:52Z"
 }
