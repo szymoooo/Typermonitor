@@ -9776,14 +9776,25 @@
         "excluded": 0,
         "hit_rate": 63.0,
         "lost": 177,
-        "pending": 1,
+        "pending": 2,
         "profit": 24.93,
-        "total": 484,
+        "total": 485,
         "void": 4,
         "won": 302,
         "yield": 5.2
       },
       "tips": [
+        {
+          "bookmaker": "Fortuna",
+          "discipline": "Piłka nożna",
+          "event": "Ekstraklasa: Wisła Płock vs Legia Warszawa",
+          "id": "511655",
+          "odds": "1.67",
+          "pick": "Mecz bez remisu (remis = zwrot): Legia Warszawa",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-22 17:30"
+        },
         {
           "bookmaker": "AdmiralBet",
           "discipline": "Koszykówka",
@@ -10652,21 +10663,10 @@
           "result": 1,
           "settled": true,
           "when": "2026-07-11 15:30"
-        },
-        {
-          "bookmaker": "AdmiralBet",
-          "discipline": "Koszykówka",
-          "event": "Mistrzostwa Europy U20 Dywizja B: Ukraina vs Gruzja",
-          "id": "483834",
-          "odds": "1.53",
-          "pick": "Handicap (z dogrywką): Ukraina (-7.5)",
-          "result": 1,
-          "settled": true,
-          "when": "2026-07-10 20:30"
         }
       ],
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T14:31:03Z"
+  "updated": "2026-11-22T15:40:39Z"
 }
