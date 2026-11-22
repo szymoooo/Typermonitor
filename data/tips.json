@@ -2153,14 +2153,25 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 751,
-        "pending": 0,
+        "pending": 1,
         "profit": -33.57,
-        "total": 1895,
+        "total": 1896,
         "void": 9,
         "won": 1135,
         "yield": -1.8
       },
       "tips": [
+        {
+          "bookmaker": "forBET",
+          "discipline": "Hokej",
+          "event": "Oshawa - Flint",
+          "id": "511725",
+          "odds": "1.52",
+          "pick": "Bet Architekt over 4,5 goli w meczu / over 1,5 goli 2 tercja",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-23 00:05"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -3029,17 +3040,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-10-14 18:45"
-        },
-        {
-          "bookmaker": "Superbet",
-          "discipline": "Piłka nożna",
-          "event": "Athletic Club - Londrina",
-          "id": "502222",
-          "odds": "1.55",
-          "pick": "over 0,5 goli + over 8,5 rr",
-          "result": -1,
-          "settled": true,
-          "when": "2026-10-14 00:30"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3323/"
@@ -10690,5 +10690,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T19:30:52Z"
+  "updated": "2026-11-22T20:10:44Z"
 }
