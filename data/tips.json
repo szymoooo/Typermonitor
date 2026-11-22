@@ -8323,14 +8323,25 @@
         "excluded": 0,
         "hit_rate": 63.6,
         "lost": 16,
-        "pending": 3,
+        "pending": 4,
         "profit": 0.33,
-        "total": 48,
+        "total": 49,
         "void": 1,
         "won": 28,
         "yield": 0.8
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "AC Milan - Frosinone",
+          "id": "511554",
+          "odds": "1.60",
+          "pick": "Frosinone powyżej 2.5 rzutów rożnych +  Frosinone powyżej 10.5 strzałów",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-22 18:00"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -10657,5 +10668,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-21T23:10:39Z"
+  "updated": "2026-11-22T10:20:46Z"
 }
