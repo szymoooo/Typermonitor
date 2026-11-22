@@ -2153,11 +2153,11 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 751,
-        "pending": 1,
-        "profit": -34.12,
+        "pending": 0,
+        "profit": -33.57,
         "total": 1895,
         "void": 9,
-        "won": 1134,
+        "won": 1135,
         "yield": -1.8
       },
       "tips": [
@@ -2168,8 +2168,8 @@
           "id": "511633",
           "odds": "1.55",
           "pick": "over 9,5 rr",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-22 16:15"
         },
         {
@@ -8321,14 +8321,14 @@
       "name": "Typer Jan Kowalski",
       "stats": {
         "excluded": 0,
-        "hit_rate": 60.9,
+        "hit_rate": 62.5,
         "lost": 18,
-        "pending": 3,
-        "profit": -1.67,
+        "pending": 1,
+        "profit": -0.57,
         "total": 50,
         "void": 1,
-        "won": 28,
-        "yield": -3.6
+        "won": 30,
+        "yield": -1.2
       },
       "tips": [
         {
@@ -8349,8 +8349,8 @@
           "id": "511554",
           "odds": "1.60",
           "pick": "Frosinone powyżej 2.5 rzutów rożnych +  Frosinone powyżej 10.5 strzałów",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-22 18:00"
         },
         {
@@ -8360,8 +8360,8 @@
           "id": "511306",
           "odds": "1.50",
           "pick": "Powyżej 8.5 rzutów rożnych +  powyżej 1.5 gola",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-22 16:15"
         },
         {
@@ -9785,14 +9785,14 @@
       "name": "Typer Adam Proszczuk",
       "stats": {
         "excluded": 0,
-        "hit_rate": 63.0,
+        "hit_rate": 63.1,
         "lost": 177,
-        "pending": 2,
-        "profit": 24.93,
+        "pending": 1,
+        "profit": 25.6,
         "total": 485,
         "void": 4,
-        "won": 302,
-        "yield": 5.2
+        "won": 303,
+        "yield": 5.3
       },
       "tips": [
         {
@@ -9802,8 +9802,8 @@
           "id": "511655",
           "odds": "1.67",
           "pick": "Mecz bez remisu (remis = zwrot): Legia Warszawa",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-22 17:30"
         },
         {
@@ -10679,5 +10679,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T17:01:08Z"
+  "updated": "2026-11-22T19:01:04Z"
 }
