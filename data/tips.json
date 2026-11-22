@@ -357,14 +357,14 @@
       "name": "Typer Jarosław Kijko",
       "stats": {
         "excluded": 0,
-        "hit_rate": 63.8,
+        "hit_rate": 64.0,
         "lost": 171,
-        "pending": 2,
-        "profit": 21.89,
+        "pending": 0,
+        "profit": 22.94,
         "total": 477,
         "void": 2,
-        "won": 302,
-        "yield": 4.6
+        "won": 304,
+        "yield": 4.8
       },
       "tips": [
         {
@@ -374,8 +374,8 @@
           "id": "511357",
           "odds": "1.50",
           "pick": "CA Indepediente over 12,5 fauli",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-21 21:00"
         },
         {
@@ -385,8 +385,8 @@
           "id": "511337",
           "odds": "1.55",
           "pick": "Sevilla over 14,5 fauli",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-21 18:30"
         },
         {
@@ -10668,5 +10668,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T10:20:46Z"
+  "updated": "2026-11-22T10:30:56Z"
 }
