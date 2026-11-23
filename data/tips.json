@@ -1256,14 +1256,25 @@
         "excluded": 0,
         "hit_rate": 61.4,
         "lost": 257,
-        "pending": 1,
+        "pending": 2,
         "profit": 17.97,
-        "total": 678,
+        "total": 679,
         "void": 11,
         "won": 409,
         "yield": 2.7
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Hokej",
+          "event": "Winnipeg Jets vs Utah Mammoth",
+          "id": "511910",
+          "odds": "1.55",
+          "pick": "Josh Morrissey ilość celnych strzałów +1,5",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-24 01:30"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Hokej",
@@ -2132,17 +2143,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-09-25 18:00"
-        },
-        {
-          "bookmaker": "STS",
-          "discipline": "Hokej",
-          "event": "Toruń - Bytom",
-          "id": "498129",
-          "odds": "1.50",
-          "pick": "Chikara Hanzawa ilość punktów kanadyjskich +0,5",
-          "result": 1,
-          "settled": true,
-          "when": "2026-09-20 16:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3121/"
@@ -10723,5 +10723,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-23T23:01:05Z"
+  "updated": "2026-11-23T23:10:49Z"
 }
