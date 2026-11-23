@@ -8367,14 +8367,25 @@
         "excluded": 0,
         "hit_rate": 64.0,
         "lost": 18,
-        "pending": 0,
+        "pending": 1,
         "profit": 0.59,
-        "total": 51,
+        "total": 52,
         "void": 1,
         "won": 32,
         "yield": 1.2
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Slovan Bratysława - Betis",
+          "id": "511919",
+          "odds": "1.70",
+          "pick": "Slovan Bratysława powyżej 8.5 strzału",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-24 21:00"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -10734,5 +10745,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-23T23:20:36Z"
+  "updated": "2026-11-23T23:40:41Z"
 }
