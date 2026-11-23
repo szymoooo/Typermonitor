@@ -2153,14 +2153,25 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 751,
-        "pending": 2,
+        "pending": 3,
         "profit": -33.57,
-        "total": 1897,
+        "total": 1898,
         "void": 9,
         "won": 1135,
         "yield": -1.8
       },
       "tips": [
+        {
+          "bookmaker": "forBET",
+          "discipline": "Piłka nożna",
+          "event": "Santos - Gremio",
+          "id": "511875",
+          "odds": "1.58",
+          "pick": "over 1,5 kartek 1 połowa",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-24 01:00"
+        },
         {
           "bookmaker": "STS",
           "discipline": "Piłka nożna",
@@ -3026,17 +3037,6 @@
           "id": "502600",
           "odds": "1.51",
           "pick": "over 8,5 rr w meczu",
-          "result": 1,
-          "settled": true,
-          "when": "2026-10-15 21:00"
-        },
-        {
-          "bookmaker": "Superbet",
-          "discipline": "Piłka nożna",
-          "event": "Brighton - Żalgiris Kowno",
-          "id": "502410",
-          "odds": "1.50",
-          "pick": "over 0,5 gola 1 połowa + over 7,5 rr w meczu",
           "result": 1,
           "settled": true,
           "when": "2026-10-15 21:00"
@@ -10712,5 +10712,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-23T18:01:03Z"
+  "updated": "2026-11-23T20:20:39Z"
 }
