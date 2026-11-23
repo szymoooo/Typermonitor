@@ -2152,12 +2152,12 @@
       "stats": {
         "excluded": 0,
         "hit_rate": 60.2,
-        "lost": 751,
-        "pending": 3,
-        "profit": -33.57,
+        "lost": 752,
+        "pending": 1,
+        "profit": -34.02,
         "total": 1898,
         "void": 9,
-        "won": 1135,
+        "won": 1136,
         "yield": -1.8
       },
       "tips": [
@@ -2179,8 +2179,8 @@
           "id": "511779",
           "odds": "1.55",
           "pick": "over 9,5 goli",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-23 13:30"
         },
         {
@@ -2190,8 +2190,8 @@
           "id": "511725",
           "odds": "1.52",
           "pick": "Bet Architekt over 4,5 goli w meczu / over 1,5 goli 2 tercja",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-23 00:05"
         },
         {
@@ -8040,14 +8040,14 @@
       "name": "Typer MatBet PL",
       "stats": {
         "excluded": 0,
-        "hit_rate": 88.0,
+        "hit_rate": 88.5,
         "lost": 3,
-        "pending": 1,
-        "profit": 9.81,
+        "pending": 0,
+        "profit": 10.61,
         "total": 26,
         "void": 0,
-        "won": 22,
-        "yield": 39.2
+        "won": 23,
+        "yield": 40.8
       },
       "tips": [
         {
@@ -8057,8 +8057,8 @@
           "id": "511734",
           "odds": "1.80",
           "pick": "Karl Anthony Towns over 1..5 rzutów celnych za 3",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-23 02:00"
         },
         {
@@ -10712,5 +10712,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-23T20:20:39Z"
+  "updated": "2026-11-23T22:40:37Z"
 }
