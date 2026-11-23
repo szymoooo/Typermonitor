@@ -8042,14 +8042,25 @@
         "excluded": 0,
         "hit_rate": 88.5,
         "lost": 3,
-        "pending": 1,
+        "pending": 2,
         "profit": 10.61,
-        "total": 27,
+        "total": 28,
         "void": 0,
         "won": 23,
         "yield": 40.8
       },
       "tips": [
+        {
+          "bookmaker": "Betfan",
+          "discipline": "Koszykówka",
+          "event": "Lakers vs Utah",
+          "id": "511911",
+          "odds": "1.72",
+          "pick": "Keyoute over 6.5 asysty",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-24 04:00"
+        },
         {
           "bookmaker": "Betfan",
           "discipline": "Koszykówka",
@@ -10723,5 +10734,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-23T23:10:49Z"
+  "updated": "2026-11-23T23:20:36Z"
 }
