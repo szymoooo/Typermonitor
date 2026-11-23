@@ -2153,14 +2153,25 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 751,
-        "pending": 1,
+        "pending": 2,
         "profit": -33.57,
-        "total": 1896,
+        "total": 1897,
         "void": 9,
         "won": 1135,
         "yield": -1.8
       },
       "tips": [
+        {
+          "bookmaker": "STS",
+          "discipline": "Piłka nożna",
+          "event": "Hiszpania u17 - Fidżi u17",
+          "id": "511779",
+          "odds": "1.55",
+          "pick": "over 9,5 goli",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-23 13:30"
+        },
         {
           "bookmaker": "forBET",
           "discipline": "Hokej",
@@ -3029,17 +3040,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-10-15 21:00"
-        },
-        {
-          "bookmaker": "Superbet",
-          "discipline": "Piłka nożna",
-          "event": "LASK - Liverpool",
-          "id": "502380",
-          "odds": "1.70",
-          "pick": "over 9,5 rr",
-          "result": 1,
-          "settled": true,
-          "when": "2026-10-14 18:45"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3323/"
@@ -10701,5 +10701,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-22T21:40:37Z"
+  "updated": "2026-11-23T11:10:41Z"
 }
