@@ -6638,14 +6638,25 @@
         "excluded": 0,
         "hit_rate": 65.8,
         "lost": 13,
-        "pending": 0,
+        "pending": 1,
         "profit": 13.96,
-        "total": 38,
+        "total": 39,
         "void": 0,
         "won": 25,
         "yield": 36.7
       },
       "tips": [
+        {
+          "bookmaker": "forBET",
+          "discipline": "Piłka nożna",
+          "event": "Internacional RS – Vitoria BA",
+          "id": "511852",
+          "odds": "1.70",
+          "pick": "Powyzej 26,5 strzałów",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-23 23:30"
+        },
         {
           "bookmaker": "STS",
           "discipline": "Koszykówka",
@@ -10701,5 +10712,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-23T16:30:53Z"
+  "updated": "2026-11-23T18:01:03Z"
 }
