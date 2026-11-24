@@ -8367,14 +8367,25 @@
         "excluded": 0,
         "hit_rate": 64.0,
         "lost": 18,
-        "pending": 2,
+        "pending": 3,
         "profit": 0.59,
-        "total": 53,
+        "total": 54,
         "void": 1,
         "won": 32,
         "yield": 1.2
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Koszykówka",
+          "event": "Orlando Magic - Detroit Pistons",
+          "id": "511999",
+          "odds": "1.61",
+          "pick": "Ausar Thompson 10+ punkty zawodnika",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-25 01:00"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -10756,5 +10767,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T10:50:36Z"
+  "updated": "2026-11-24T12:01:02Z"
 }
