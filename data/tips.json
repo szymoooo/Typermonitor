@@ -1256,14 +1256,25 @@
         "excluded": 0,
         "hit_rate": 61.2,
         "lost": 259,
-        "pending": 0,
+        "pending": 1,
         "profit": 15.97,
-        "total": 679,
+        "total": 680,
         "void": 11,
         "won": 409,
         "yield": 2.4
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Hokej",
+          "event": "Edmonton Oilers vs Vegas Golden Knight",
+          "id": "512162",
+          "odds": "1.68",
+          "pick": "Evan Bouchard ilość asyst +0,5",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-25 02:00"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Hokej",
@@ -2132,17 +2143,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-09-27 17:00"
-        },
-        {
-          "bookmaker": "STS",
-          "discipline": "Hokej",
-          "event": "Cracovia vs Toruń",
-          "id": "498856",
-          "odds": "1.55",
-          "pick": "Santeri Peltola ilość punktów kanadyjskich +0,5",
-          "result": 1,
-          "settled": true,
-          "when": "2026-09-25 18:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3121/"
@@ -7341,14 +7341,14 @@
       "name": "Typer Bet MasterPL",
       "stats": {
         "excluded": 0,
-        "hit_rate": 77.0,
-        "lost": 14,
-        "pending": 2,
-        "profit": 14.17,
+        "hit_rate": 76.2,
+        "lost": 15,
+        "pending": 0,
+        "profit": 13.67,
         "total": 64,
         "void": 1,
-        "won": 47,
-        "yield": 23.2
+        "won": 48,
+        "yield": 21.7
       },
       "tips": [
         {
@@ -7358,8 +7358,8 @@
           "id": "512023",
           "odds": "1.50",
           "pick": "RB Lipsk wygra + strzeli powyżej 1,5 gola + wykona powyżej 2,5 rzutów rożnych",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-24 21:00"
         },
         {
@@ -7369,8 +7369,8 @@
           "id": "512017",
           "odds": "2.05",
           "pick": "FC Porto najwięcej celnych strzałów + powyżej 2,5 rzutów rożnych",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-24 21:00"
         },
         {
@@ -8387,14 +8387,14 @@
       "name": "Typer Jan Kowalski",
       "stats": {
         "excluded": 0,
-        "hit_rate": 64.0,
+        "hit_rate": 64.7,
         "lost": 18,
-        "pending": 3,
-        "profit": 0.59,
+        "pending": 2,
+        "profit": 1.29,
         "total": 54,
         "void": 1,
-        "won": 32,
-        "yield": 1.2
+        "won": 33,
+        "yield": 2.5
       },
       "tips": [
         {
@@ -8426,8 +8426,8 @@
           "id": "511919",
           "odds": "1.70",
           "pick": "Slovan Bratysława powyżej 8.5 strzału",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-24 21:00"
         },
         {
@@ -10789,5 +10789,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T19:40:40Z"
+  "updated": "2026-11-24T22:40:38Z"
 }
