@@ -1254,14 +1254,14 @@
       "name": "Typer Michał Olkiewicz",
       "stats": {
         "excluded": 0,
-        "hit_rate": 61.4,
-        "lost": 257,
-        "pending": 2,
-        "profit": 17.97,
+        "hit_rate": 61.2,
+        "lost": 259,
+        "pending": 0,
+        "profit": 15.97,
         "total": 679,
         "void": 11,
         "won": 409,
-        "yield": 2.7
+        "yield": 2.4
       },
       "tips": [
         {
@@ -1271,8 +1271,8 @@
           "id": "511910",
           "odds": "1.55",
           "pick": "Josh Morrissey ilość celnych strzałów +1,5",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-24 01:30"
         },
         {
@@ -1282,8 +1282,8 @@
           "id": "511826",
           "odds": "1.73",
           "pick": "Jesper Bratt ilość punktów kanadyjskich +0,5",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-24 01:00"
         },
         {
@@ -10789,5 +10789,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T19:10:36Z"
+  "updated": "2026-11-24T19:20:43Z"
 }
