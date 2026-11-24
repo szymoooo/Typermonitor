@@ -2153,14 +2153,25 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 752,
-        "pending": 2,
+        "pending": 3,
         "profit": -34.02,
-        "total": 1899,
+        "total": 1900,
         "void": 9,
         "won": 1136,
         "yield": -1.8
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Sabah - Barcelona",
+          "id": "512037",
+          "odds": "1.60",
+          "pick": "over 3,5 goli + over 6,5 rr",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-25 18:45"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -3029,17 +3040,6 @@
           "result": -1,
           "settled": true,
           "when": "2026-10-16 20:45"
-        },
-        {
-          "bookmaker": "STS",
-          "discipline": "Koszykówka",
-          "event": "Tasmania - Adelaide",
-          "id": "502730",
-          "odds": "1.50",
-          "pick": "over 177,5 punktów z dogrywką",
-          "result": 1,
-          "settled": true,
-          "when": "2026-10-16 10:30"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3323/"
@@ -10789,5 +10789,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T14:01:06Z"
+  "updated": "2026-11-24T14:40:39Z"
 }
