@@ -6636,14 +6636,14 @@
       "name": "Typer Czoker Basket",
       "stats": {
         "excluded": 0,
-        "hit_rate": 65.8,
+        "hit_rate": 66.7,
         "lost": 13,
-        "pending": 1,
-        "profit": 13.96,
+        "pending": 0,
+        "profit": 14.66,
         "total": 39,
         "void": 0,
-        "won": 25,
-        "yield": 36.7
+        "won": 26,
+        "yield": 37.6
       },
       "tips": [
         {
@@ -6653,8 +6653,8 @@
           "id": "511852",
           "odds": "1.70",
           "pick": "Powyzej 26,5 strzałów",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-23 23:30"
         },
         {
@@ -10789,5 +10789,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T16:40:46Z"
+  "updated": "2026-11-24T19:10:36Z"
 }
