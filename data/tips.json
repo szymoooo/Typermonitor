@@ -3050,14 +3050,25 @@
         "excluded": 0,
         "hit_rate": 67.4,
         "lost": 263,
-        "pending": 2,
+        "pending": 3,
         "profit": 57.2,
-        "total": 836,
+        "total": 837,
         "void": 28,
         "won": 543,
         "yield": 7.1
       },
       "tips": [
+        {
+          "bookmaker": "Betclic",
+          "discipline": "E-sport",
+          "event": "Imperial - FlyQuest",
+          "id": "512058",
+          "odds": "1.58",
+          "pick": "Decenty powyżej 13.5 eliminacji na drugiej mapie",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-25 09:00"
+        },
         {
           "bookmaker": "Betclic",
           "discipline": "E-sport",
@@ -3926,17 +3937,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-08-16 18:00"
-        },
-        {
-          "bookmaker": "Superbet",
-          "discipline": "Piłka nożna",
-          "event": "Legia - Radomiak",
-          "id": "490026",
-          "odds": "1.60",
-          "pick": "Legia wygra",
-          "result": 1,
-          "settled": true,
-          "when": "2026-08-14 20:30"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3474/"
@@ -10789,5 +10789,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T14:40:39Z"
+  "updated": "2026-11-24T16:20:37Z"
 }
