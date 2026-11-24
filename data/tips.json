@@ -2153,12 +2153,12 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 752,
-        "pending": 2,
-        "profit": -33.44,
+        "pending": 1,
+        "profit": -32.89,
         "total": 1900,
         "void": 9,
-        "won": 1137,
-        "yield": -1.8
+        "won": 1138,
+        "yield": -1.7
       },
       "tips": [
         {
@@ -2179,8 +2179,8 @@
           "id": "512021",
           "odds": "1.55",
           "pick": "over 0,5 goli w meczu + over 9,5 rr",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-24 22:00"
         },
         {
@@ -10789,5 +10789,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T22:40:38Z"
+  "updated": "2026-11-24T22:50:36Z"
 }
