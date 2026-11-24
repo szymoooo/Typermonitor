@@ -8367,14 +8367,25 @@
         "excluded": 0,
         "hit_rate": 64.0,
         "lost": 18,
-        "pending": 1,
+        "pending": 2,
         "profit": 0.59,
-        "total": 52,
+        "total": 53,
         "void": 1,
         "won": 32,
         "yield": 1.2
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Slavia Praga - Villarreal",
+          "id": "511989",
+          "odds": "1.55",
+          "pick": "Slavia Praga powyżej 2.5 rożnych + Oskar Kubiak powyżej 0.5 popełnionych fauli",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-25 18:45"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -10745,5 +10756,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T00:30:54Z"
+  "updated": "2026-11-24T10:50:36Z"
 }
