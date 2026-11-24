@@ -3050,14 +3050,25 @@
         "excluded": 0,
         "hit_rate": 67.4,
         "lost": 263,
-        "pending": 1,
+        "pending": 2,
         "profit": 57.2,
-        "total": 835,
+        "total": 836,
         "void": 28,
         "won": 543,
         "yield": 7.1
       },
       "tips": [
+        {
+          "bookmaker": "Betclic",
+          "discipline": "E-sport",
+          "event": "FaZe - wildcard",
+          "id": "511925",
+          "odds": "1.50",
+          "pick": "Neityu poniżej 14.5 eliminacji",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-24 08:00"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "E-sport",
@@ -3926,17 +3937,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-08-14 20:30"
-        },
-        {
-          "bookmaker": "Betclic",
-          "discipline": "E-sport",
-          "event": "BetBoom - Faze",
-          "id": "483718",
-          "odds": "1.50",
-          "pick": "Jcobbb poniżej 14.5 eliminacji na drugiej mapie",
-          "result": 1,
-          "settled": true,
-          "when": "2026-07-10 13:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3474/"
@@ -10745,5 +10745,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T00:20:35Z"
+  "updated": "2026-11-24T00:30:54Z"
 }
