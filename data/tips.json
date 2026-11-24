@@ -2153,14 +2153,25 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 752,
-        "pending": 1,
+        "pending": 2,
         "profit": -34.02,
-        "total": 1898,
+        "total": 1899,
         "void": 9,
         "won": 1136,
         "yield": -1.8
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Chapecoense- Palmeiras",
+          "id": "512021",
+          "odds": "1.55",
+          "pick": "over 0,5 goli w meczu + over 9,5 rr",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-24 22:00"
+        },
         {
           "bookmaker": "forBET",
           "discipline": "Piłka nożna",
@@ -3029,17 +3040,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-10-16 10:30"
-        },
-        {
-          "bookmaker": "Superbet",
-          "discipline": "Piłka nożna",
-          "event": "Brann - Lincoln",
-          "id": "502600",
-          "odds": "1.51",
-          "pick": "over 8,5 rr w meczu",
-          "result": 1,
-          "settled": true,
-          "when": "2026-10-15 21:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3323/"
@@ -7343,14 +7343,25 @@
         "excluded": 0,
         "hit_rate": 77.0,
         "lost": 14,
-        "pending": 0,
+        "pending": 1,
         "profit": 14.17,
-        "total": 62,
+        "total": 63,
         "void": 1,
         "won": 47,
         "yield": 23.2
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Feyenoord - FC Porto",
+          "id": "512017",
+          "odds": "2.05",
+          "pick": "FC Porto najwięcej celnych strzałów + powyżej 2,5 rzutów rożnych",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-24 21:00"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Dart",
@@ -10767,5 +10778,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T12:01:02Z"
+  "updated": "2026-11-24T13:40:51Z"
 }
