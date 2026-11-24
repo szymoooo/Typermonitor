@@ -9897,14 +9897,25 @@
         "excluded": 0,
         "hit_rate": 63.0,
         "lost": 178,
-        "pending": 0,
+        "pending": 1,
         "profit": 24.6,
-        "total": 485,
+        "total": 486,
         "void": 4,
         "won": 303,
         "yield": 5.1
       },
       "tips": [
+        {
+          "bookmaker": "Fuksiarz",
+          "discipline": "Koszykówka",
+          "event": "Argentyna 2. Liga: Ciclista Juninense vs Union Mar del Plata",
+          "id": "512065",
+          "odds": "1.55",
+          "pick": "Handicap (z dogrywką): Ciclista Juninense (-7.5)",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-25 01:00"
+        },
         {
           "bookmaker": "Fortuna",
           "discipline": "Piłka nożna",
@@ -10773,21 +10784,10 @@
           "result": 1,
           "settled": true,
           "when": "2026-07-12 13:00"
-        },
-        {
-          "bookmaker": "Superbet",
-          "discipline": "Koszykówka",
-          "event": "Mistrzostwa Europy U20 Dywizja B: Bułgaria vs Holandia",
-          "id": "484020",
-          "odds": "1.67",
-          "pick": "Zwycięzca (z dogrywką): Bułgaria",
-          "result": 1,
-          "settled": true,
-          "when": "2026-07-11 15:30"
         }
       ],
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T16:20:37Z"
+  "updated": "2026-11-24T16:40:46Z"
 }
