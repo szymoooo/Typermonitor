@@ -7343,14 +7343,25 @@
         "excluded": 0,
         "hit_rate": 77.0,
         "lost": 14,
-        "pending": 1,
+        "pending": 2,
         "profit": 14.17,
-        "total": 63,
+        "total": 64,
         "void": 1,
         "won": 47,
         "yield": 23.2
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "RB Lipsk - Lens",
+          "id": "512023",
+          "odds": "1.50",
+          "pick": "RB Lipsk wygra + strzeli powyżej 1,5 gola + wykona powyżej 2,5 rzutów rożnych",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-24 21:00"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -10778,5 +10789,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T13:40:51Z"
+  "updated": "2026-11-24T14:01:06Z"
 }
