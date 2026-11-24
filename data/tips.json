@@ -2153,11 +2153,11 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 752,
-        "pending": 3,
-        "profit": -34.02,
+        "pending": 2,
+        "profit": -33.44,
         "total": 1900,
         "void": 9,
-        "won": 1136,
+        "won": 1137,
         "yield": -1.8
       },
       "tips": [
@@ -2190,8 +2190,8 @@
           "id": "511875",
           "odds": "1.58",
           "pick": "over 1,5 kartek 1 połowa",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-24 01:00"
         },
         {
@@ -3048,14 +3048,14 @@
       "name": "Typer Michał Kołodyński",
       "stats": {
         "excluded": 0,
-        "hit_rate": 67.4,
+        "hit_rate": 67.5,
         "lost": 263,
-        "pending": 3,
-        "profit": 57.2,
+        "pending": 1,
+        "profit": 58.39,
         "total": 837,
         "void": 28,
-        "won": 543,
-        "yield": 7.1
+        "won": 545,
+        "yield": 7.2
       },
       "tips": [
         {
@@ -3076,8 +3076,8 @@
           "id": "511925",
           "odds": "1.50",
           "pick": "Neityu poniżej 14.5 eliminacji",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-24 08:00"
         },
         {
@@ -3087,8 +3087,8 @@
           "id": "511924",
           "odds": "1.69",
           "pick": "Marsborne wygra drugą mapę z handicapem -3.5 rundy",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-24 03:00"
         },
         {
@@ -8062,14 +8062,14 @@
       "name": "Typer MatBet PL",
       "stats": {
         "excluded": 0,
-        "hit_rate": 85.2,
-        "lost": 4,
-        "pending": 1,
-        "profit": 9.61,
+        "hit_rate": 82.1,
+        "lost": 5,
+        "pending": 0,
+        "profit": 8.61,
         "total": 28,
         "void": 0,
         "won": 23,
-        "yield": 35.6
+        "yield": 30.8
       },
       "tips": [
         {
@@ -8079,8 +8079,8 @@
           "id": "511911",
           "odds": "1.72",
           "pick": "Keyoute over 6.5 asysty",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-24 04:00"
         },
         {
@@ -10789,5 +10789,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T19:30:51Z"
+  "updated": "2026-11-24T19:40:40Z"
 }
