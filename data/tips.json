@@ -8062,14 +8062,14 @@
       "name": "Typer MatBet PL",
       "stats": {
         "excluded": 0,
-        "hit_rate": 88.5,
-        "lost": 3,
-        "pending": 2,
-        "profit": 10.61,
+        "hit_rate": 85.2,
+        "lost": 4,
+        "pending": 1,
+        "profit": 9.61,
         "total": 28,
         "void": 0,
         "won": 23,
-        "yield": 40.8
+        "yield": 35.6
       },
       "tips": [
         {
@@ -8090,8 +8090,8 @@
           "id": "511908",
           "odds": "1.63",
           "pick": "Hartenstein over 3.5 asysty",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-24 01:30"
         },
         {
@@ -10789,5 +10789,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T19:20:43Z"
+  "updated": "2026-11-24T19:30:51Z"
 }
