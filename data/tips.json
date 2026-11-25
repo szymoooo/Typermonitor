@@ -2152,13 +2152,13 @@
       "name": "Typer Piotr Boss",
       "stats": {
         "excluded": 0,
-        "hit_rate": 60.2,
+        "hit_rate": 60.3,
         "lost": 752,
-        "pending": 2,
-        "profit": -32.35,
+        "pending": 1,
+        "profit": -31.75,
         "total": 1902,
         "void": 9,
-        "won": 1139,
+        "won": 1140,
         "yield": -1.7
       },
       "tips": [
@@ -2191,8 +2191,8 @@
           "id": "512037",
           "odds": "1.60",
           "pick": "over 3,5 goli + over 6,5 rr",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-25 18:45"
         },
         {
@@ -9896,14 +9896,14 @@
       "name": "Typer AL Primo",
       "stats": {
         "excluded": 0,
-        "hit_rate": 78.6,
-        "lost": 6,
-        "pending": 2,
-        "profit": 7.42,
+        "hit_rate": 75.9,
+        "lost": 7,
+        "pending": 1,
+        "profit": 6.42,
         "total": 31,
         "void": 1,
         "won": 22,
-        "yield": 26.5
+        "yield": 22.1
       },
       "tips": [
         {
@@ -9913,8 +9913,8 @@
           "id": "512237",
           "odds": "1.50",
           "pick": "Sety handicap Projekt (-1.5) + punkty handicap: Projekt (-7.5)",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-25 20:30"
         },
         {
@@ -11148,5 +11148,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T21:10:41Z"
+  "updated": "2026-11-25T22:10:26Z"
 }
