@@ -8390,10 +8390,10 @@
         "excluded": 0,
         "hit_rate": 64.7,
         "lost": 18,
-        "pending": 2,
+        "pending": 1,
         "profit": 1.29,
         "total": 54,
-        "void": 1,
+        "void": 2,
         "won": 33,
         "yield": 2.5
       },
@@ -8416,8 +8416,8 @@
           "id": "511989",
           "odds": "1.55",
           "pick": "Slavia Praga powyżej 2.5 rożnych + Oskar Kubiak powyżej 0.5 popełnionych fauli",
-          "result": null,
-          "settled": false,
+          "result": 0,
+          "settled": true,
           "when": "2026-11-25 18:45"
         },
         {
@@ -11148,5 +11148,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T17:01:12Z"
+  "updated": "2026-11-25T18:20:54Z"
 }
