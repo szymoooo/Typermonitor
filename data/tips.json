@@ -2154,14 +2154,25 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 752,
-        "pending": 1,
+        "pending": 2,
         "profit": -32.35,
-        "total": 1901,
+        "total": 1902,
         "void": 9,
         "won": 1139,
         "yield": -1.7
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Atletico MG - Corinthians",
+          "id": "512368",
+          "odds": "1.57",
+          "pick": "over 4,5 kartek",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-26 00:00"
+        },
         {
           "bookmaker": "forBET",
           "discipline": "Hokej",
@@ -3030,17 +3041,6 @@
           "result": -1,
           "settled": true,
           "when": "2026-10-17 16:30"
-        },
-        {
-          "bookmaker": "forBET",
-          "discipline": "Piłka nożna",
-          "event": "Ponte Preta - Atletico GO",
-          "id": "502970",
-          "odds": "1.53",
-          "pick": "over 9,5 rr",
-          "result": 1,
-          "settled": true,
-          "when": "2026-10-17 00:30"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3323/"
@@ -11148,5 +11148,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T19:10:36Z"
+  "updated": "2026-11-25T21:10:41Z"
 }
