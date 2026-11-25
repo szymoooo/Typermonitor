@@ -1257,14 +1257,25 @@
         "excluded": 0,
         "hit_rate": 61.3,
         "lost": 259,
-        "pending": 1,
+        "pending": 2,
         "profit": 16.65,
-        "total": 681,
+        "total": 682,
         "void": 11,
         "won": 410,
         "yield": 2.5
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Hokej",
+          "event": "Florida Panthers vs Ottawa Senators",
+          "id": "512389",
+          "odds": "1.73",
+          "pick": "Brady Tkachuk ilość Hits +3,5",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-26 01:00"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Hokej",
@@ -2133,17 +2144,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-09-27 18:00"
-        },
-        {
-          "bookmaker": "Fortuna",
-          "discipline": "Hokej",
-          "event": "Orebro vs Skelleftea",
-          "id": "499073",
-          "odds": "1.59",
-          "pick": "Rickard Hugg min. 1 punkt kanadyjski",
-          "result": -1,
-          "settled": true,
-          "when": "2026-09-26 18:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3121/"
@@ -11148,5 +11148,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T22:10:26Z"
+  "updated": "2026-11-25T22:30:54Z"
 }
