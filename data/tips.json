@@ -14,6 +14,7 @@
     "63015",
     "43947",
     "46063",
+    "63270",
     "30188"
   ],
   "profiles": {
@@ -9891,6 +9892,364 @@
       ],
       "url": "https://zawodtyper.pl/typer/6320/"
     },
+    "63270": {
+      "name": "Typer AL Primo",
+      "stats": {
+        "excluded": 0,
+        "hit_rate": 78.6,
+        "lost": 6,
+        "pending": 2,
+        "profit": 7.42,
+        "total": 31,
+        "void": 1,
+        "won": 22,
+        "yield": 26.5
+      },
+      "tips": [
+        {
+          "bookmaker": "Betclic",
+          "discipline": "Siatkówka",
+          "event": "GKS Katowice - Projekt Warszawa",
+          "id": "512237",
+          "odds": "1.50",
+          "pick": "Sety handicap Projekt (-1.5) + punkty handicap: Projekt (-7.5)",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-25 20:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "DevelopRes Rzeszów [K] - Dresdner SC [K]",
+          "id": "512231",
+          "odds": "1.50",
+          "pick": "Sety handicap: Rzeszów (-1.5)",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-26 20:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "AS Cannes - Royan Atlantique",
+          "id": "511897",
+          "odds": "1.55",
+          "pick": "Sety - handicap: Cannes (-1.5)",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-24 20:00"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Warta Zawiercie - Jastrzębie Barkom",
+          "id": "511733",
+          "odds": "1.62",
+          "pick": "Dokładna ilość setów: 3",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-24 20:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "LUK Lublin - Ślepsk Suwałki",
+          "id": "511724",
+          "odds": "1.77",
+          "pick": "Lczba punktów: -145.5",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-23 20:30"
+        },
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Siatkówka",
+          "event": "Lube Civitanova - Tinet Prata Di Pordenone",
+          "id": "511448",
+          "odds": "1.50",
+          "pick": "Handicap setowy: Lube Civitanova (-2.5)",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-22 18:00"
+        },
+        {
+          "bookmaker": "Betclic",
+          "discipline": "Siatkówka",
+          "event": "Resovia Rzeszów - Skra Bełchatów",
+          "id": "511268",
+          "odds": "1.68",
+          "pick": "Liczba punktów: +172.5",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-21 15:00"
+        },
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Siatkówka",
+          "event": "Warta Zawiercie - Ślepsk Suwałki",
+          "id": "511117",
+          "odds": "1.69",
+          "pick": "Handicap setowy: Warta Zawiercie (-2.5)",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-21 18:00"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "San Bernardo Cuneo - Rana Verona",
+          "id": "511096",
+          "odds": "1.55",
+          "pick": "Punkty - handicap: Verona (-3.5)",
+          "result": -1,
+          "settled": true,
+          "when": "2026-11-20 20:45"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "AZS Olsztyn - GKS Katowice",
+          "id": "511065",
+          "odds": "1.75",
+          "pick": "Punkty: Majchrzak Jakub > Cieślik Paweł",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-20 17:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Stilon Gorzów - LUK Lublin",
+          "id": "510699",
+          "odds": "1.61",
+          "pick": "Punkty handicap 2 (-9.5) + 1.set/wynik końcowy: 2/2",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-18 20:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Trefl Gdańsk - Warta Zawiercie",
+          "id": "510619",
+          "odds": "1.51",
+          "pick": "Sety handicap: 2 (-1.5) +  Punkty handicap: 2 (-8.5)",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-18 17:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Ślepsk Suwałki - ZAKSA Kędzierzyn-Koźle",
+          "id": "509563",
+          "odds": "1.55",
+          "pick": "1. set - liczba punktów: + 44.5",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-14 18:00"
+        },
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Siatkówka",
+          "event": "LUK Lublin - Resovia Rzeszów",
+          "id": "509209",
+          "odds": "1.50",
+          "pick": "Handicap setowy: LUK Lublin (-1.5)",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-15 15:00"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Projekt Warszawa - CHKS Chełm",
+          "id": "509199",
+          "odds": "1.77",
+          "pick": "Liczba punktów: +167.5",
+          "result": 1,
+          "settled": true,
+          "when": "2026-11-13 17:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "UNI Opole [K] - Pałac Bydgoszcz [K]",
+          "id": "505296",
+          "odds": "1.65",
+          "pick": "1.set - liczba punktów: powyżej 44.5",
+          "result": 1,
+          "settled": true,
+          "when": "2026-10-27 20:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Sokół Mogilno [K] - Chemik Police [K]",
+          "id": "504186",
+          "odds": "1.50",
+          "pick": "Zwycięzca meczu: Chemik",
+          "result": 1,
+          "settled": true,
+          "when": "2026-10-24 20:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Warta Zawiercie - ZAKSA Kędzierzyn-Koźle",
+          "id": "504005",
+          "odds": "1.67",
+          "pick": "1. set - punkty - handicap: 1 (-2.5) + Zwycięzca meczu: 1",
+          "result": 1,
+          "settled": true,
+          "when": "2026-10-21 20:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "CHKS Chełm - Stilon Gorzów",
+          "id": "503556",
+          "odds": "2.21",
+          "pick": "Liczba setów: +3.5  +  1. set - liczba punktów: +44.5",
+          "result": -1,
+          "settled": true,
+          "when": "2026-10-19 17:30"
+        },
+        {
+          "bookmaker": "Betclic",
+          "discipline": "Siatkówka",
+          "event": "Ślepsk Suwałki - Barkom",
+          "id": "503314",
+          "odds": "1.83",
+          "pick": "Liczba punktów - V. Tupchii: Poniżej 15,5",
+          "result": 0,
+          "settled": true,
+          "when": "2026-10-18 18:00"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "ZAKSA Kędzierzyn-Koźle - LUK Lublin",
+          "id": "503209",
+          "odds": "1.50",
+          "pick": "Sety - handicap: LUK (-1.5)",
+          "result": 1,
+          "settled": true,
+          "when": "2026-10-18 15:00"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Norwid Częstochowa - Resovia Rzeszów",
+          "id": "502976",
+          "odds": "1.52",
+          "pick": "Sety - handicap: Resovia (-1.5)",
+          "result": -1,
+          "settled": true,
+          "when": "2026-10-17 15:00"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "GKS Katowice - Warta Zawiercie",
+          "id": "502862",
+          "odds": "1.55",
+          "pick": "Punkty - handicap: 2 (-12.5)",
+          "result": -1,
+          "settled": true,
+          "when": "2026-10-16 17:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Projekt Warszawa - AZS Olsztyn",
+          "id": "502853",
+          "odds": "1.95",
+          "pick": "1. set - liczba punktów: +43.5 + Sety - handicap: 1 (-1.5)",
+          "result": 1,
+          "settled": true,
+          "when": "2026-10-16 20:30"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Chemik Police [K] - MKS Kalisz [K]",
+          "id": "502031",
+          "odds": "1.50",
+          "pick": "Sety - handicap: Chemik (-1.5)",
+          "result": 1,
+          "settled": true,
+          "when": "2026-10-12 20:30"
+        },
+        {
+          "bookmaker": "Betclic",
+          "discipline": "Piłka nożna",
+          "event": "Hiszpania - Chorwacja",
+          "id": "499722",
+          "odds": "1.53",
+          "pick": "Hiszpania + powyżej 2.5 gola w meczu",
+          "result": 1,
+          "settled": true,
+          "when": "2026-09-29 20:45"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Piłka nożna",
+          "event": "Norwegia - Portugalia",
+          "id": "499366",
+          "odds": "1.74",
+          "pick": "Mecz: 1x + 1 połowa 1x + Norwegia +0.5 gola",
+          "result": -1,
+          "settled": true,
+          "when": "2026-09-27 20:45"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Francja - Polska",
+          "id": "499057",
+          "odds": "1.52",
+          "pick": "Punkty - handicap: Polska -4.5",
+          "result": 1,
+          "settled": true,
+          "when": "2026-09-26 21:00"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Finlandia - Słowenia",
+          "id": "499054",
+          "odds": "1.55",
+          "pick": "Punkty - handicap: 2 (-3.5)",
+          "result": -1,
+          "settled": true,
+          "when": "2026-09-26 17:00"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Finlandia - Francja",
+          "id": "498925",
+          "odds": "1.55",
+          "pick": "Sety - handicap: Francja (-1.5)",
+          "result": 1,
+          "settled": true,
+          "when": "2026-09-25 21:00"
+        },
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Słowenia - Polska",
+          "id": "498920",
+          "odds": "1.55",
+          "pick": "Sety - handicap: Polska (-1.5)",
+          "result": 1,
+          "settled": true,
+          "when": "2026-09-25 17:00"
+        }
+      ],
+      "url": "https://zawodtyper.pl/typer/63270/"
+    },
     "6560": {
       "name": "Typer Adam Proszczuk",
       "stats": {
@@ -10789,5 +11148,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T11:50:43Z"
+  "updated": "2026-11-25T12:01:11Z"
 }
