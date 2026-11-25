@@ -1257,14 +1257,25 @@
         "excluded": 0,
         "hit_rate": 61.2,
         "lost": 259,
-        "pending": 1,
+        "pending": 2,
         "profit": 15.97,
-        "total": 680,
+        "total": 681,
         "void": 11,
         "won": 409,
         "yield": 2.4
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Hokej",
+          "event": "Buffalo Sabres vs NY Rangers",
+          "id": "512263",
+          "odds": "1.59",
+          "pick": "Matt Rempe ilość hits +1,5",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-26 01:00"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Hokej",
@@ -2133,17 +2144,6 @@
           "result": -1,
           "settled": true,
           "when": "2026-09-26 18:00"
-        },
-        {
-          "bookmaker": "STS",
-          "discipline": "Hokej",
-          "event": "Oświęcim vs Katowice",
-          "id": "499037",
-          "odds": "1.58",
-          "pick": "Zwycięstwo Unia (z ewentualną dogrywką)",
-          "result": 1,
-          "settled": true,
-          "when": "2026-09-27 17:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3121/"
@@ -11148,5 +11148,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T12:01:11Z"
+  "updated": "2026-11-25T13:01:13Z"
 }
