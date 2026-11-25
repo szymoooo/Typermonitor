@@ -10256,14 +10256,25 @@
         "excluded": 0,
         "hit_rate": 62.9,
         "lost": 179,
-        "pending": 0,
+        "pending": 1,
         "profit": 24.15,
-        "total": 487,
+        "total": 488,
         "void": 4,
         "won": 304,
         "yield": 5.0
       },
       "tips": [
+        {
+          "bookmaker": "AdmiralBet",
+          "discipline": "Koszykówka",
+          "event": "BLK Kobiety: Zagłębie Sosnowiec vs Wisła Kraków",
+          "id": "512399",
+          "odds": "1.74",
+          "pick": "Zwycięzca (włącznie z dogrywką): Wisła Kraków",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-28 18:00"
+        },
         {
           "bookmaker": "Betfan",
           "discipline": "Koszykówka",
@@ -11132,21 +11143,10 @@
           "result": -1,
           "settled": true,
           "when": "2026-07-16 02:00"
-        },
-        {
-          "bookmaker": "STS",
-          "discipline": "Koszykówka",
-          "event": "Urugwaj Liga de Ascenso: Montevideo Basket vs Larre Borges",
-          "id": "484375",
-          "odds": "1.76",
-          "pick": "Zwycięzca (włącznie z dogrywką): Larre Borges",
-          "result": -1,
-          "settled": true,
-          "when": "2026-07-14 01:15"
         }
       ],
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T22:30:54Z"
+  "updated": "2026-11-25T23:10:40Z"
 }
