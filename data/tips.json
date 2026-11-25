@@ -10256,14 +10256,25 @@
         "excluded": 0,
         "hit_rate": 63.0,
         "lost": 178,
-        "pending": 1,
+        "pending": 2,
         "profit": 24.6,
-        "total": 486,
+        "total": 487,
         "void": 4,
         "won": 303,
         "yield": 5.1
       },
       "tips": [
+        {
+          "bookmaker": "Betfan",
+          "discipline": "Koszykówka",
+          "event": "Eurocup Kobiety: AZS Poznań vs Derthona Basket",
+          "id": "512316",
+          "odds": "1.72",
+          "pick": "Zwycięzca (z dogrywką): AZS Poznań",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-25 18:30"
+        },
         {
           "bookmaker": "Fuksiarz",
           "discipline": "Koszykówka",
@@ -11132,21 +11143,10 @@
           "result": -1,
           "settled": true,
           "when": "2026-07-14 01:15"
-        },
-        {
-          "bookmaker": "Superbet",
-          "discipline": "Siatkówka",
-          "event": "Liga Narodów Kobiet: Francja vs Czechy",
-          "id": "484141",
-          "odds": "1.74",
-          "pick": "Zwycięzca: Czechy / Superprzewaga/",
-          "result": 1,
-          "settled": true,
-          "when": "2026-07-12 13:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T13:01:13Z"
+  "updated": "2026-11-25T17:01:12Z"
 }
