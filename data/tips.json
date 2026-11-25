@@ -2153,14 +2153,25 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 752,
-        "pending": 1,
+        "pending": 2,
         "profit": -32.89,
-        "total": 1900,
+        "total": 1901,
         "void": 9,
         "won": 1138,
         "yield": -1.7
       },
       "tips": [
+        {
+          "bookmaker": "forBET",
+          "discipline": "Hokej",
+          "event": "Kyiv Capitals - Hockey Punks",
+          "id": "512251",
+          "odds": "1.54",
+          "pick": "Bet Architekt over 1,5 goli 1 tercja / over 6,5 goli w meczu",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-25 18:15"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -3029,17 +3040,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-10-17 00:30"
-        },
-        {
-          "bookmaker": "forBET",
-          "discipline": "Piłka nożna",
-          "event": "Finn Harps - Bray",
-          "id": "502858",
-          "odds": "1.54",
-          "pick": "Bet Architekt over 2,5 goli w meczu / over 0,5 goli 1 połowa",
-          "result": -1,
-          "settled": true,
-          "when": "2026-10-16 20:45"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3323/"
@@ -10789,5 +10789,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-24T22:50:36Z"
+  "updated": "2026-11-25T11:50:43Z"
 }
