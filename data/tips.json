@@ -3049,14 +3049,14 @@
       "name": "Typer Michał Kołodyński",
       "stats": {
         "excluded": 0,
-        "hit_rate": 67.5,
-        "lost": 263,
-        "pending": 1,
-        "profit": 58.39,
+        "hit_rate": 67.4,
+        "lost": 264,
+        "pending": 0,
+        "profit": 57.39,
         "total": 837,
         "void": 28,
         "won": 545,
-        "yield": 7.2
+        "yield": 7.1
       },
       "tips": [
         {
@@ -3066,8 +3066,8 @@
           "id": "512058",
           "odds": "1.58",
           "pick": "Decenty powyżej 13.5 eliminacji na drugiej mapie",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-25 09:00"
         },
         {
@@ -8388,14 +8388,14 @@
       "name": "Typer Jan Kowalski",
       "stats": {
         "excluded": 0,
-        "hit_rate": 64.7,
-        "lost": 18,
-        "pending": 1,
-        "profit": 1.29,
+        "hit_rate": 63.5,
+        "lost": 19,
+        "pending": 0,
+        "profit": 0.29,
         "total": 54,
         "void": 2,
         "won": 33,
-        "yield": 2.5
+        "yield": 0.6
       },
       "tips": [
         {
@@ -8405,8 +8405,8 @@
           "id": "511999",
           "odds": "1.61",
           "pick": "Ausar Thompson 10+ punkty zawodnika",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-25 01:00"
         },
         {
@@ -10254,14 +10254,14 @@
       "name": "Typer Adam Proszczuk",
       "stats": {
         "excluded": 0,
-        "hit_rate": 63.0,
-        "lost": 178,
-        "pending": 2,
-        "profit": 24.6,
+        "hit_rate": 62.9,
+        "lost": 179,
+        "pending": 0,
+        "profit": 24.15,
         "total": 487,
         "void": 4,
-        "won": 303,
-        "yield": 5.1
+        "won": 304,
+        "yield": 5.0
       },
       "tips": [
         {
@@ -10271,8 +10271,8 @@
           "id": "512316",
           "odds": "1.72",
           "pick": "Zwycięzca (z dogrywką): AZS Poznań",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-25 18:30"
         },
         {
@@ -10282,8 +10282,8 @@
           "id": "512065",
           "odds": "1.55",
           "pick": "Handicap (z dogrywką): Ciclista Juninense (-7.5)",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-25 01:00"
         },
         {
@@ -11148,5 +11148,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T18:40:49Z"
+  "updated": "2026-11-25T19:10:36Z"
 }
