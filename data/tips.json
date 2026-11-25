@@ -1255,14 +1255,14 @@
       "name": "Typer Michał Olkiewicz",
       "stats": {
         "excluded": 0,
-        "hit_rate": 61.2,
+        "hit_rate": 61.3,
         "lost": 259,
-        "pending": 2,
-        "profit": 15.97,
+        "pending": 1,
+        "profit": 16.65,
         "total": 681,
         "void": 11,
-        "won": 409,
-        "yield": 2.4
+        "won": 410,
+        "yield": 2.5
       },
       "tips": [
         {
@@ -1283,8 +1283,8 @@
           "id": "512162",
           "odds": "1.68",
           "pick": "Evan Bouchard ilość asyst +0,5",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-25 02:00"
         },
         {
@@ -2154,11 +2154,11 @@
         "excluded": 0,
         "hit_rate": 60.2,
         "lost": 752,
-        "pending": 2,
-        "profit": -32.89,
+        "pending": 1,
+        "profit": -32.35,
         "total": 1901,
         "void": 9,
-        "won": 1138,
+        "won": 1139,
         "yield": -1.7
       },
       "tips": [
@@ -2169,8 +2169,8 @@
           "id": "512251",
           "odds": "1.54",
           "pick": "Bet Architekt over 1,5 goli 1 tercja / over 6,5 goli w meczu",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-25 18:15"
         },
         {
@@ -11148,5 +11148,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T18:20:54Z"
+  "updated": "2026-11-25T18:40:49Z"
 }
