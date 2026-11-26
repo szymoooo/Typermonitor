@@ -2154,12 +2154,12 @@
         "excluded": 0,
         "hit_rate": 60.3,
         "lost": 752,
-        "pending": 2,
-        "profit": -31.75,
+        "pending": 0,
+        "profit": -30.63,
         "total": 1903,
         "void": 9,
-        "won": 1140,
-        "yield": -1.7
+        "won": 1142,
+        "yield": -1.6
       },
       "tips": [
         {
@@ -2169,8 +2169,8 @@
           "id": "512477",
           "odds": "1.55",
           "pick": "over 5,5 goli",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-26 17:00"
         },
         {
@@ -2180,8 +2180,8 @@
           "id": "512368",
           "odds": "1.57",
           "pick": "over 4,5 kartek",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-26 00:00"
         },
         {
@@ -11181,5 +11181,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-26T20:20:34Z"
+  "updated": "2026-11-26T20:30:56Z"
 }
