@@ -2154,14 +2154,25 @@
         "excluded": 0,
         "hit_rate": 60.3,
         "lost": 752,
-        "pending": 1,
+        "pending": 2,
         "profit": -31.75,
-        "total": 1902,
+        "total": 1903,
         "void": 9,
         "won": 1140,
         "yield": -1.7
       },
       "tips": [
+        {
+          "bookmaker": "STS",
+          "discipline": "Piłka nożna",
+          "event": "Chorwacja u17 - Kuba u17",
+          "id": "512477",
+          "odds": "1.55",
+          "pick": "over 5,5 goli",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-26 17:00"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -3030,17 +3041,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-10-18 13:30"
-        },
-        {
-          "bookmaker": "forBET",
-          "discipline": "Piłka nożna",
-          "event": "Den Haag - Psv",
-          "id": "503057",
-          "odds": "1.50",
-          "pick": "over 9,5 rr",
-          "result": -1,
-          "settled": true,
-          "when": "2026-10-17 16:30"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3323/"
@@ -11170,5 +11170,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-26T11:10:39Z"
+  "updated": "2026-11-26T13:40:41Z"
 }
