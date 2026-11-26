@@ -9898,14 +9898,25 @@
         "excluded": 0,
         "hit_rate": 75.9,
         "lost": 7,
-        "pending": 1,
+        "pending": 2,
         "profit": 6.42,
-        "total": 31,
+        "total": 32,
         "void": 1,
         "won": 22,
         "yield": 22.1
       },
       "tips": [
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "Norwid Częstochowa - ZAKSA Kędzierzyn-Koźle",
+          "id": "512452",
+          "odds": "1.50",
+          "pick": "ZAKSA Kędzierzyn-Koźle",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-28 15:00"
+        },
         {
           "bookmaker": "Betclic",
           "discipline": "Siatkówka",
@@ -11148,5 +11159,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-25T23:40:41Z"
+  "updated": "2026-11-26T10:40:38Z"
 }
