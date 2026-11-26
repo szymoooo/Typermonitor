@@ -9907,14 +9907,14 @@
       "name": "Typer AL Primo",
       "stats": {
         "excluded": 0,
-        "hit_rate": 75.9,
-        "lost": 7,
-        "pending": 3,
-        "profit": 6.42,
+        "hit_rate": 74.2,
+        "lost": 8,
+        "pending": 1,
+        "profit": 5.92,
         "total": 33,
         "void": 1,
-        "won": 22,
-        "yield": 22.1
+        "won": 23,
+        "yield": 19.1
       },
       "tips": [
         {
@@ -9924,8 +9924,8 @@
           "id": "512459",
           "odds": "8.50",
           "pick": "Wygrana 1. seta /wygrana w meczu: Lube/Perugia + punkty 1. set (+45.5) + Suma punktów (+182.5)",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-26 20:30"
         },
         {
@@ -9957,8 +9957,8 @@
           "id": "512231",
           "odds": "1.50",
           "pick": "Sety handicap: Rzeszów (-1.5)",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-26 20:30"
         },
         {
@@ -11181,5 +11181,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-26T21:01:06Z"
+  "updated": "2026-11-26T22:01:03Z"
 }
