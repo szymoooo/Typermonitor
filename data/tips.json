@@ -9898,14 +9898,25 @@
         "excluded": 0,
         "hit_rate": 75.9,
         "lost": 7,
-        "pending": 2,
+        "pending": 3,
         "profit": 6.42,
-        "total": 32,
+        "total": 33,
         "void": 1,
         "won": 22,
         "yield": 22.1
       },
       "tips": [
+        {
+          "bookmaker": "Betclic",
+          "discipline": "Siatkówka",
+          "event": "Sir Safety Perugia - Lube Civitanova",
+          "id": "512459",
+          "odds": "8.50",
+          "pick": "Wygrana 1. seta /wygrana w meczu: Lube/Perugia + punkty 1. set (+45.5) + Suma punktów (+182.5)",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-26 20:30"
+        },
         {
           "bookmaker": "STS",
           "discipline": "Siatkówka",
@@ -11159,5 +11170,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-26T10:40:38Z"
+  "updated": "2026-11-26T11:10:39Z"
 }
