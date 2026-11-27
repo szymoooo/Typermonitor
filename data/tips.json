@@ -9931,14 +9931,25 @@
         "excluded": 0,
         "hit_rate": 74.2,
         "lost": 8,
-        "pending": 1,
+        "pending": 2,
         "profit": 5.92,
-        "total": 33,
+        "total": 34,
         "void": 1,
         "won": 23,
         "yield": 19.1
       },
       "tips": [
+        {
+          "bookmaker": "STS",
+          "discipline": "Siatkówka",
+          "event": "CHKS Chełm - Warta Zawiercie",
+          "id": "512736",
+          "odds": "1.50",
+          "pick": "Sety handicap: 2 (-1.5) + Punkty handicap: 2 (-8.5)",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-29 15:00"
+        },
         {
           "bookmaker": "Betclic",
           "discipline": "Siatkówka",
@@ -11203,5 +11214,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-27T18:50:39Z"
+  "updated": "2026-11-27T19:10:38Z"
 }
