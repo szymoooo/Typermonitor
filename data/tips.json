@@ -1255,14 +1255,14 @@
       "name": "Typer Michał Olkiewicz",
       "stats": {
         "excluded": 0,
-        "hit_rate": 61.2,
-        "lost": 260,
-        "pending": 2,
-        "profit": 15.65,
+        "hit_rate": 61.1,
+        "lost": 261,
+        "pending": 1,
+        "profit": 14.65,
         "total": 684,
         "void": 12,
         "won": 410,
-        "yield": 2.3
+        "yield": 2.2
       },
       "tips": [
         {
@@ -1283,8 +1283,8 @@
           "id": "512704",
           "odds": "1.60",
           "pick": "Jasper Bratt ilość punktów kanadyjskich +0,5",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-27 19:01"
         },
         {
@@ -2153,13 +2153,13 @@
       "stats": {
         "excluded": 0,
         "hit_rate": 60.3,
-        "lost": 752,
-        "pending": 3,
-        "profit": -30.63,
+        "lost": 753,
+        "pending": 2,
+        "profit": -31.63,
         "total": 1906,
         "void": 9,
         "won": 1142,
-        "yield": -1.6
+        "yield": -1.7
       },
       "tips": [
         {
@@ -2191,8 +2191,8 @@
           "id": "512572",
           "odds": "1.50",
           "pick": "over 2,5 rr 1 poł. + over 9,5 rr w meczu",
-          "result": null,
-          "settled": false,
+          "result": -1,
+          "settled": true,
           "when": "2026-11-27 00:00"
         },
         {
@@ -11214,5 +11214,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-27T21:01:07Z"
+  "updated": "2026-11-27T22:31:02Z"
 }
