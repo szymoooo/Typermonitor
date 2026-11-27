@@ -8390,14 +8390,25 @@
         "excluded": 0,
         "hit_rate": 63.5,
         "lost": 19,
-        "pending": 1,
+        "pending": 2,
         "profit": 0.29,
-        "total": 55,
+        "total": 56,
         "void": 2,
         "won": 33,
         "yield": 0.6
       },
       "tips": [
+        {
+          "bookmaker": "Fortuna",
+          "discipline": "Piłka nożna",
+          "event": "Werder Bremen - Borussia Monchengladbach",
+          "id": "512600",
+          "odds": "1.50",
+          "pick": "Borussia Monchengladbach powyżej 11.5 fauli",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-27 20:30"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -11181,5 +11192,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-27T07:30:57Z"
+  "updated": "2026-11-27T08:01:08Z"
 }
