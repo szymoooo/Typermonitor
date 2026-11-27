@@ -10311,14 +10311,25 @@
         "excluded": 0,
         "hit_rate": 62.9,
         "lost": 179,
-        "pending": 2,
+        "pending": 3,
         "profit": 24.15,
-        "total": 489,
+        "total": 490,
         "void": 4,
         "won": 304,
         "yield": 5.0
       },
       "tips": [
+        {
+          "bookmaker": "LVBET",
+          "discipline": "Koszykówka",
+          "event": "Puchar Azji - kwalifikacje: Palestyna vs Zjednoczone Emiraty Arabskie",
+          "id": "512696",
+          "odds": "1.72",
+          "pick": "Zwycięzca (z dogrywką): Zjednoczone Emiraty Arabskie",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-27 19:00"
+        },
         {
           "bookmaker": "forBET",
           "discipline": "Koszykówka",
@@ -11187,21 +11198,10 @@
           "result": 1,
           "settled": true,
           "when": "2026-07-18 22:30"
-        },
-        {
-          "bookmaker": "LVBET",
-          "discipline": "Koszykówka",
-          "event": "Mistrzostwa Europy U20 Dywizja B: Ukraina vs Portugalia",
-          "id": "485136",
-          "odds": "1.67",
-          "pick": "Zwycięzca (z dogrywką): Ukraina",
-          "result": 1,
-          "settled": true,
-          "when": "2026-07-18 20:30"
         }
       ],
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-27T15:50:43Z"
+  "updated": "2026-11-27T17:01:11Z"
 }
