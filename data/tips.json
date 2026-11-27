@@ -1257,14 +1257,25 @@
         "excluded": 0,
         "hit_rate": 61.2,
         "lost": 260,
-        "pending": 1,
+        "pending": 2,
         "profit": 15.65,
-        "total": 683,
+        "total": 684,
         "void": 12,
         "won": 410,
         "yield": 2.3
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Hokej",
+          "event": "Edmonton Oilers vs Seattle Kraken",
+          "id": "512730",
+          "odds": "1.65",
+          "pick": "Edmonton ilość bramek w przewadze +0,5",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-28 02:00"
+        },
         {
           "bookmaker": "STS",
           "discipline": "Hokej",
@@ -2133,17 +2144,6 @@
           "result": -1,
           "settled": true,
           "when": "2026-09-30 04:00"
-        },
-        {
-          "bookmaker": "LVBET",
-          "discipline": "Hokej",
-          "event": "Katowice vs Kraków",
-          "id": "499672",
-          "odds": "1.60",
-          "pick": "Wygrana GKS Katowice z handicapem -1,5 bramki",
-          "result": -1,
-          "settled": true,
-          "when": "2026-09-29 18:30"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3121/"
@@ -11203,5 +11203,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-27T17:50:44Z"
+  "updated": "2026-11-27T18:50:39Z"
 }
