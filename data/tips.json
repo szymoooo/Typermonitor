@@ -8390,14 +8390,25 @@
         "excluded": 0,
         "hit_rate": 63.5,
         "lost": 19,
-        "pending": 2,
+        "pending": 3,
         "profit": 0.29,
-        "total": 56,
+        "total": 57,
         "void": 2,
         "won": 33,
         "yield": 0.6
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Wisła Kraków - Motor Lublin",
+          "id": "512682",
+          "odds": "1.55",
+          "pick": "Każda drużyna powyżej 2.5 rzutów rożnych +Wisła Lublin powyżej 0.5 gola",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-28 20:15"
+        },
         {
           "bookmaker": "Fortuna",
           "discipline": "Piłka nożna",
@@ -11192,5 +11203,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-27T11:01:14Z"
+  "updated": "2026-11-27T15:50:43Z"
 }
