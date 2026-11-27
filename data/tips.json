@@ -1257,14 +1257,25 @@
         "excluded": 0,
         "hit_rate": 61.2,
         "lost": 260,
-        "pending": 0,
+        "pending": 1,
         "profit": 15.65,
-        "total": 682,
+        "total": 683,
         "void": 12,
         "won": 410,
         "yield": 2.3
       },
       "tips": [
+        {
+          "bookmaker": "STS",
+          "discipline": "Hokej",
+          "event": "NJ Devils vs Calgary Flames",
+          "id": "512704",
+          "odds": "1.60",
+          "pick": "Jasper Bratt ilość punktów kanadyjskich +0,5",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-27 19:01"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Hokej",
@@ -2133,17 +2144,6 @@
           "result": -1,
           "settled": true,
           "when": "2026-09-29 18:30"
-        },
-        {
-          "bookmaker": "LVBET",
-          "discipline": "Hokej",
-          "event": "Podhale vs Zagłębie",
-          "id": "499300",
-          "odds": "1.65",
-          "pick": "Zagłebie ilość goli +8,5",
-          "result": 1,
-          "settled": true,
-          "when": "2026-09-27 18:00"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3121/"
@@ -11203,5 +11203,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-27T17:01:11Z"
+  "updated": "2026-11-27T17:30:58Z"
 }
