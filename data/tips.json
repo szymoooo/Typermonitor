@@ -8390,14 +8390,25 @@
         "excluded": 0,
         "hit_rate": 63.0,
         "lost": 20,
-        "pending": 1,
+        "pending": 2,
         "profit": -0.21,
-        "total": 57,
+        "total": 58,
         "void": 2,
         "won": 34,
         "yield": -0.4
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Hamburger - Bayern Monachium",
+          "id": "512874",
+          "odds": "1.55",
+          "pick": "Upamecano powyżej 0.5 strzałów + Laimer powyżej 0.5 fauli zawodnika",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-28 15:30"
+        },
         {
           "bookmaker": "Superbet",
           "discipline": "Piłka nożna",
@@ -11214,5 +11225,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-28T08:30:55Z"
+  "updated": "2026-11-28T11:01:17Z"
 }
