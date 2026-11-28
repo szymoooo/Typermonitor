@@ -1255,14 +1255,14 @@
       "name": "Typer Michał Olkiewicz",
       "stats": {
         "excluded": 0,
-        "hit_rate": 61.1,
+        "hit_rate": 61.2,
         "lost": 261,
-        "pending": 1,
-        "profit": 14.65,
+        "pending": 0,
+        "profit": 15.3,
         "total": 684,
         "void": 12,
-        "won": 410,
-        "yield": 2.2
+        "won": 411,
+        "yield": 2.3
       },
       "tips": [
         {
@@ -1272,8 +1272,8 @@
           "id": "512730",
           "odds": "1.65",
           "pick": "Edmonton ilość bramek w przewadze +0,5",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-28 02:00"
         },
         {
@@ -2152,13 +2152,13 @@
       "name": "Typer Piotr Boss",
       "stats": {
         "excluded": 0,
-        "hit_rate": 60.2,
+        "hit_rate": 60.3,
         "lost": 754,
-        "pending": 1,
-        "profit": -32.63,
+        "pending": 0,
+        "profit": -32.05,
         "total": 1906,
         "void": 9,
-        "won": 1142,
+        "won": 1143,
         "yield": -1.7
       },
       "tips": [
@@ -2169,8 +2169,8 @@
           "id": "512749",
           "odds": "1.58",
           "pick": "over 1,5 kartek 1 połowa",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-28 00:00"
         },
         {
@@ -10320,14 +10320,14 @@
       "name": "Typer Adam Proszczuk",
       "stats": {
         "excluded": 0,
-        "hit_rate": 62.7,
+        "hit_rate": 62.8,
         "lost": 181,
-        "pending": 2,
-        "profit": 22.15,
+        "pending": 1,
+        "profit": 22.84,
         "total": 491,
         "void": 4,
-        "won": 304,
-        "yield": 4.6
+        "won": 305,
+        "yield": 4.7
       },
       "tips": [
         {
@@ -10337,8 +10337,8 @@
           "id": "512710",
           "odds": "1.69",
           "pick": "Zwycięzca (z dogrywką): Brazylia",
-          "result": null,
-          "settled": false,
+          "result": 1,
+          "settled": true,
           "when": "2026-11-28 00:10"
         },
         {
@@ -11214,5 +11214,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-28T08:20:35Z"
+  "updated": "2026-11-28T08:30:55Z"
 }
