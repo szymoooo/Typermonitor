@@ -2154,14 +2154,25 @@
         "excluded": 0,
         "hit_rate": 60.3,
         "lost": 754,
-        "pending": 0,
+        "pending": 1,
         "profit": -32.05,
-        "total": 1906,
+        "total": 1907,
         "void": 9,
         "won": 1143,
         "yield": -1.7
       },
       "tips": [
+        {
+          "bookmaker": "Superbet",
+          "discipline": "Piłka nożna",
+          "event": "Palmeiras- Estudiantes",
+          "id": "512876",
+          "odds": "1.60",
+          "pick": "over 5,5 kartek",
+          "result": null,
+          "settled": false,
+          "when": "2026-11-28 21:00"
+        },
         {
           "bookmaker": "forBET",
           "discipline": "Piłka nożna",
@@ -3030,17 +3041,6 @@
           "result": 1,
           "settled": true,
           "when": "2026-10-20 00:30"
-        },
-        {
-          "bookmaker": "Superbet",
-          "discipline": "Piłka nożna",
-          "event": "Monza - Cagliari",
-          "id": "503551",
-          "odds": "1.50",
-          "pick": "over 0,5 goli + over 7,5 rr",
-          "result": 1,
-          "settled": true,
-          "when": "2026-10-19 18:30"
         }
       ],
       "url": "https://zawodtyper.pl/typer/3323/"
@@ -11225,5 +11225,5 @@
       "url": "https://zawodtyper.pl/typer/6560/"
     }
   },
-  "updated": "2026-11-28T11:01:17Z"
+  "updated": "2026-11-28T11:10:39Z"
 }
